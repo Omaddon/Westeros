@@ -65,6 +65,12 @@ extension House {
     }
 }
 
+extension House {
+    var proxyForComparasion : String {
+        return   "\(name) \(count)"
+    }
+}
+
 
 extension House : Hashable {
     var hashValue : Int {
@@ -82,19 +88,19 @@ extension House : Equatable {
 
 extension House : Comparable {
     static func <(lhs: House, rhs: House) -> Bool {
-        return lhs.count < rhs.count
+        return lhs.proxyForComparasion < rhs.proxyForComparasion
     }
     
     static func <=(lhs: House, rhs: House) -> Bool {
-        return lhs.count <= rhs.count
+        return lhs.proxyForComparasion <= rhs.proxyForComparasion
     }
     
     static func >(lhs: House, rhs: House) -> Bool {
-        return lhs.count > rhs.count
+        return lhs.proxyForComparasion > rhs.proxyForComparasion
     }
     
     static func >=(lhs: House, rhs: House) -> Bool {
-        return lhs.count >= rhs.count
+        return lhs.proxyForComparasion >= rhs.proxyForComparasion
     }
     
 }
