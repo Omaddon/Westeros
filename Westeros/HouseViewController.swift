@@ -42,6 +42,7 @@ class HouseViewController: UIViewController {
         
         syncViewWithModel()
     }
+    
 }
 
 
