@@ -59,30 +59,31 @@ extension House {
 }
 
 
-extension House {
-    var proxy : String {
-        return "\(name) \(sigil) \(words)"
-    }
-}
+// MARK: - Extensiones
 
 extension House {
+    // No comparamos el Sigil pues necesitariamos hacer que Sigil también fuera Equatable
+    // Se podría hacer, pero no es imprescindible... se puede hacer más adelante
+    var proxyForEquality : String {
+        return "\(name) \(words) \(count)"
+    }
+    
     var proxyForComparasion : String {
-        return   "\(name) \(count)"
+        return "\(name.uppercased()) \(count)"
     }
 }
-
 
 extension House : Hashable {
     var hashValue : Int {
         get {
-            return proxy.hashValue
+            return proxyForEquality.hashValue
         }
     }
 }
 
 extension House : Equatable {
     static func ==(lhs: House, rhs: House) -> Bool {
-        return lhs.proxy == rhs.proxy
+        return lhs.proxyForEquality == rhs.proxyForEquality
     }
 }
 

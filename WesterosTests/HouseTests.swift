@@ -48,7 +48,7 @@ class HouseTests: XCTestCase {
     
     func testHouseExistence() {
         let starkSigil = Sigil(image: #imageLiteral(resourceName: "codeIsComing.png") , description: "Direwolf")
-        let stark = House(name: "Stark", sigil: starkSigil, words: "Winter is coming")
+        let stark = House(name: "Stark", sigil: starkSigil, words: "Winter is coming!")
         
         XCTAssertNotNil(stark)
     }
@@ -77,7 +77,29 @@ class HouseTests: XCTestCase {
         XCTAssertEqual(starkHouse.count, 2)
     }
     
+    func testHouseEquality() {
+        // Identidad
+        XCTAssertEqual(starkHouse, starkHouse)
+        
+        // Igualdad
+        let jinxed = House(name: "Stark", sigil: starkSigil, words: "Winter is coming!")
+        XCTAssertEqual(jinxed, starkHouse)
+        
+        // Desigualdad
+        XCTAssertNotEqual(starkHouse, lannisterHouse)
+    }
+    
+    func testHashable() {
+        XCTAssertNotNil(starkHouse.hashValue)
+    }
+    
+    func testHouseComparison() {
+        XCTAssertLessThan(lannisterHouse, starkHouse)
+    }
 }
+
+
+
 
 
 
