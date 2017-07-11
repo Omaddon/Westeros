@@ -10,6 +10,8 @@
 		8C29B9841F0D49980022DCBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C29B9831F0D49980022DCBE /* AppDelegate.swift */; };
 		8C29B98B1F0D49980022DCBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C29B98A1F0D49980022DCBE /* Assets.xcassets */; };
 		8C29B98E1F0D49980022DCBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C29B98C1F0D49980022DCBE /* LaunchScreen.storyboard */; };
+		8C31B1941F152AC100B0AB24 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C31B1921F152AC100B0AB24 /* HouseViewController.swift */; };
+		8C31B1951F152AC100B0AB24 /* HouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C31B1931F152AC100B0AB24 /* HouseViewController.xib */; };
 		8CD583031F0FC31000D425E0 /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD583021F0FC31000D425E0 /* HouseTests.swift */; };
 		8CD583051F0FC44500D425E0 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD583041F0FC44500D425E0 /* House.swift */; };
 		8CD583091F0FCA8500D425E0 /* codeIsComing.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD583071F0FCA8500D425E0 /* codeIsComing.png */; };
@@ -36,6 +38,8 @@
 		8C29B98F1F0D49980022DCBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C29B9941F0D49990022DCBE /* WesterosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WesterosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C29B99A1F0D49990022DCBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C31B1921F152AC100B0AB24 /* HouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		8C31B1931F152AC100B0AB24 /* HouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HouseViewController.xib; sourceTree = "<group>"; };
 		8CD583021F0FC31000D425E0 /* HouseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
 		8CD583041F0FC44500D425E0 /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		8CD583071F0FCA8500D425E0 /* codeIsComing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeIsComing.png; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				8CD5830B1F0FCA8D00D425E0 /* Resources */,
+				8C31B1961F152AD400B0AB24 /* Controllers */,
 				8CD583061F0FC45000D425E0 /* Models */,
 				8C29B9831F0D49980022DCBE /* AppDelegate.swift */,
 				8C29B98A1F0D49980022DCBE /* Assets.xcassets */,
@@ -101,6 +106,15 @@
 				8CD5830C1F0FCCB700D425E0 /* PersonTest.swift */,
 			);
 			path = WesterosTests;
+			sourceTree = "<group>";
+		};
+		8C31B1961F152AD400B0AB24 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C31B1921F152AC100B0AB24 /* HouseViewController.swift */,
+				8C31B1931F152AC100B0AB24 /* HouseViewController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		8CD583061F0FC45000D425E0 /* Models */ = {
@@ -209,6 +223,7 @@
 			files = (
 				8CD5830A1F0FCA8500D425E0 /* lannister.jpg in Resources */,
 				8CD583091F0FCA8500D425E0 /* codeIsComing.png in Resources */,
+				8C31B1951F152AC100B0AB24 /* HouseViewController.xib in Resources */,
 				8C29B98E1F0D49980022DCBE /* LaunchScreen.storyboard in Resources */,
 				8C29B98B1F0D49980022DCBE /* Assets.xcassets in Resources */,
 			);
@@ -231,6 +246,7 @@
 				8CD5830F1F0FCF6E00D425E0 /* Person.swift in Sources */,
 				8CD583051F0FC44500D425E0 /* House.swift in Sources */,
 				8C29B9841F0D49980022DCBE /* AppDelegate.swift in Sources */,
+				8C31B1941F152AC100B0AB24 /* HouseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
