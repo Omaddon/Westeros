@@ -22,6 +22,8 @@ class HouseViewController: UIViewController {
     init(model: House) {
         self.model = model
         super.init(nibName: nil, bundle: nil)
+        
+        self.title = model.name
     }
     
     // Requerido para evitar los nil durante los estados intermedios de la inicialización
