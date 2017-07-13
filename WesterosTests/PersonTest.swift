@@ -26,19 +26,17 @@ class PersonTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
-
-        starkImage = #imageLiteral(resourceName: "codeIsComing.png")
-        lannisterImage = #imageLiteral(resourceName: "lannister.jpg")
-        
-        starkSigil = Sigil(image: starkImage, description: "Direwolf")
-        lannisterSigil = Sigil(image: lannisterImage, description: "Rampant Lion")
-        
-        starkHouse = House(name: "Stark", sigil: starkSigil, words: "Winter is coming!")
-        lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Hear me roar!")
+      
+        starkHouse = Repository.local.house(named: "Stark")
+        lannisterHouse = Repository.local.house(named: "Lannister")
         
         robb = Person(name: "Robb", alias: "The young wolf", house: starkHouse)
         arya = Person(name: "Arya", house: starkHouse)
         tyrion = Person(name: "Tyrion", alias: "The Imp", house: lannisterHouse)
+        
+//        robb = Repository.local.char(named: "Robb", house: "Stark")
+//        arya = Repository.local.char(named: "Arya", house: "Stark")
+//        tyrion = Repository.local.char(named: "Tyrion", house: "Lannister")
     }
     
     override func tearDown() {

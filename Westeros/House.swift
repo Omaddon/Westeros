@@ -20,6 +20,10 @@ final class House {
     
     private var _members : Members
     
+//    var members : Members {
+//        return _members
+//    }
+    
     init(name: String, sigil: Sigil, words: Words) {
         
         (self.name, self.sigil, self.words) = (name, sigil, words)

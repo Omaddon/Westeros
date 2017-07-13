@@ -29,7 +29,58 @@ class RepositoryTests: XCTestCase {
         let houses = Repository.local.houses
         
         XCTAssertNotNil(houses)
-        XCTAssertEqual(houses.count, 2)
+        XCTAssertEqual(houses.count, 3)
     }
     
+    func testLocalRepositorySorted() {
+        let houses = Repository.local.houses
+        
+        XCTAssertNotEqual(houses, houses.reversed())
+        
+        XCTAssertEqual(houses, houses.sorted())
+    }
+    
+    func testLocalRepositoryFilter() {
+        func filterStark(house: House) -> Bool {
+            let starkHouse : House? = Repository.local.house(named: "Stark")
+            return house == starkHouse
+        }
+        
+        func filterFail(house: House) -> Bool {
+            let omaddonHouse = House(name: "Omaddon",
+                                     sigil: (Repository.local.house(named: "Stark")?.sigil)!,
+                                     words: "No words")
+            return house == omaddonHouse
+        }
+        
+        var result : [House]? = Repository.local.houses(filter: filterStark)
+        XCTAssertNotEqual(result!, [])
+        
+        result = Repository.local.houses(filter: filterFail)
+        XCTAssertEqual(result!, [])
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
