@@ -28,8 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabVC = UITabBarController()
         tabVC.viewControllers = houses.map { HouseViewController(model: $0).wrappedInNavigation() }
         
+        // Creamos la Table
+        let houseTableVC = HouseTableViewController().wrappedInNavigation()
+        
         // Asignamos el rootVC
-        window?.rootViewController = tabVC
+        window?.rootViewController = houseTableVC
         
         return true
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C128E121F17E8D8000CBB46 /* HouseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C128E111F17E8D8000CBB46 /* HouseTableViewController.swift */; };
 		8C29B9841F0D49980022DCBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C29B9831F0D49980022DCBE /* AppDelegate.swift */; };
 		8C29B98B1F0D49980022DCBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C29B98A1F0D49980022DCBE /* Assets.xcassets */; };
 		8C29B98E1F0D49980022DCBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C29B98C1F0D49980022DCBE /* LaunchScreen.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C128E111F17E8D8000CBB46 /* HouseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseTableViewController.swift; sourceTree = "<group>"; };
 		8C29B9801F0D49980022DCBE /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C29B9831F0D49980022DCBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C29B98A1F0D49980022DCBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				8C31B1921F152AC100B0AB24 /* HouseViewController.swift */,
 				8C31B1931F152AC100B0AB24 /* HouseViewController.xib */,
+				8C128E111F17E8D8000CBB46 /* HouseTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				8CD5830F1F0FCF6E00D425E0 /* Person.swift in Sources */,
 				8CD583051F0FC44500D425E0 /* House.swift in Sources */,
 				8C29B9841F0D49980022DCBE /* AppDelegate.swift in Sources */,
+				8C128E121F17E8D8000CBB46 /* HouseTableViewController.swift in Sources */,
 				8C31B1941F152AC100B0AB24 /* HouseViewController.swift in Sources */,
 				8C55109F1F16771100BD15E0 /* UIKitExtensions.swift in Sources */,
 				8C5510A31F167C6C00BD15E0 /* Repository.swift in Sources */,
