@@ -34,10 +34,13 @@ class RepositoryTests: XCTestCase {
     
     func testLocalRepositorySorted() {
         let houses = Repository.local.houses
+        let firstHouse = "Lannister"
         
         XCTAssertNotEqual(houses, houses.reversed())
         
         XCTAssertEqual(houses, houses.sorted())
+        
+        XCTAssertEqual(houses[0].name, firstHouse)
     }
     
     func testLocalRepositoryFilter() {

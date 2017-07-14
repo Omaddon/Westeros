@@ -36,6 +36,7 @@ class HouseTableViewController: UIViewController, UITableViewDataSource, UITable
         
         cell.textLabel?.text = "House \(houses[indexPath.row].name)"
         cell.imageView?.image = (houses[indexPath.row].sigil.image)
+        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
         
         return cell
     }

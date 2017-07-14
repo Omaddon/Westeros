@@ -46,6 +46,8 @@ final class Sigil {
 }
 
 
+// MARK: - Extensiones
+
 extension House {
     var count : Int {
         return _members.count
@@ -61,9 +63,6 @@ extension House {
         _members.insert(person)
     }
 }
-
-
-// MARK: - Extensiones
 
 extension House {
     // No comparamos el Sigil pues necesitariamos hacer que Sigil también fuera Equatable

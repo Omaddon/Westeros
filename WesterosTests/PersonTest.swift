@@ -11,9 +11,6 @@ import XCTest
 
 class PersonTest: XCTestCase {
     
-    var starkImage      : UIImage!
-    var lannisterImage  : UIImage!
-    
     var starkSigil      : Sigil!
     var lannisterSigil  : Sigil!
     

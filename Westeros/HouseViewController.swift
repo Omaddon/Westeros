@@ -43,8 +43,7 @@ class HouseViewController: UIViewController {
         super.viewWillAppear(animated)
         
         syncViewWithModel()
-    }
-    
+    }    
 }
 
 

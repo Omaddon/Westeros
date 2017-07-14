@@ -11,16 +11,13 @@ import XCTest
 
 class HouseTests: XCTestCase {
     
-    var starkImage      : UIImage!
-    var lannisterImage  : UIImage!
-    
     var starkSigil      : Sigil!
     var lannisterSigil  : Sigil!
     
     var starkHouse      : House!
     var lannisterHouse  : House!
     
-    var lyanna    : Person!
+    var lyanna     : Person!
     var martyn     : Person!
     
     override func setUp() {
@@ -48,11 +45,7 @@ class HouseTests: XCTestCase {
     
     
     func testSigilExistance() {
-        
-        let starkSigil = starkHouse.sigil
         XCTAssertNotNil(starkSigil)
-        
-        let lannisterSigil = lannisterHouse.sigil
         XCTAssertNotNil(lannisterSigil)
     }
     
@@ -72,8 +65,19 @@ class HouseTests: XCTestCase {
         XCTAssertEqual(starkHouse, starkHouse)
         
         // Igualdad
-//        let jinxed = House(name: "Stark", sigil: starkSigil, words: "Winter is coming!")
-//        XCTAssertEqual(jinxed, starkHouse)
+        let jinxed = House(name: "Stark", sigil: starkSigil, words: "Winter is coming!")
+        
+        let robbJinxed = Person(name: "Robb", alias: "The young wolf", house: jinxed)
+        let aryaJinxed = Person(name: "Arya", house: jinxed)
+        let eddardJinxed = Person(name: "Eddard", alias: "The king in the North", house: jinxed)
+        let sansaJinxed = Person(name: "Sansa", house: jinxed)
+        
+        jinxed.add(person: robbJinxed)
+        jinxed.add(person: aryaJinxed)
+        jinxed.add(person: eddardJinxed)
+        jinxed.add(person: sansaJinxed)
+        
+        XCTAssertEqual(jinxed, starkHouse)
         
         // Desigualdad
         XCTAssertNotEqual(starkHouse, lannisterHouse)
