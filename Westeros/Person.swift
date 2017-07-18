@@ -88,6 +88,24 @@ extension Person : Equatable {
     }
 }
 
+extension Person : Comparable {
+    static func <(lhs: Person, rhs: Person) -> Bool {
+        return lhs.proxy < rhs.proxy
+    }
+    
+    static func <=(lhs: Person, rhs: Person) -> Bool {
+        return lhs.proxy <= rhs.proxy
+    }
+    
+    static func >(lhs: Person, rhs: Person) -> Bool {
+        return lhs.proxy > rhs.proxy
+    }
+    
+    static func >=(lhs: Person, rhs: Person) -> Bool {
+        return lhs.proxy >= rhs.proxy
+    }
+}
+
 
 
 

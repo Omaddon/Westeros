@@ -16,8 +16,8 @@ class HouseViewController: UIViewController {
     
     @IBOutlet weak var sigilImageView: UIImageView!
     
-    
     let model : House
+    
     
     init(model: House) {
         self.model = model
@@ -33,17 +33,59 @@ class HouseViewController: UIViewController {
     
     func syncViewWithModel() {
         // model -> view
-        
         houseNameView.text = "House \(model.name)"
         sigilImageView.image = model.sigil.image
         wordsView.text = model.words
     }
     
+    @objc func displayWiki() {
+        // Creamos un WikiVC
+        let wikiVC = WikiViewController(model: self.model)
+        
+        // Lo cargamos en el navigation
+        navigationController?.pushViewController(wikiVC, animated: true)
+    }
+    
+    func setupUI() {
+        // Creamos un botón
+        let wikiButton = UIBarButtonItem(title: "Wiki",
+                                         style: .plain,
+                                         target: self,
+                                         action: #selector(displayWiki))
+        
+        let houseButton = UIBarButtonItem(title: "Persons",
+                                          style: .plain,
+                                          target: self,
+                                          action: #selector(displayPersons))
+        
+        // Añadimos el botón a la barra del navigationController
+        navigationItem.rightBarButtonItems = [wikiButton, houseButton]
+        
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        setupUI()
         syncViewWithModel()
-    }    
+    }
+    
+    // PARTE OPCIONAL IMPLEMENTADA POR MI
+    
+    override func viewDidLoad() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(displayPersons))
+        
+        sigilImageView.isUserInteractionEnabled = true
+        sigilImageView.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func displayPersons(recognizer: UITapGestureRecognizer) {
+        
+        let personVC = PersonTableViewController(model: self.model)
+        
+        self.navigationController?.pushViewController(personVC, animated: true)
+        
+    }
 }
 
 

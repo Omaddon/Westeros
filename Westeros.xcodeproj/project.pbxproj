@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C128E121F17E8D8000CBB46 /* HouseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C128E111F17E8D8000CBB46 /* HouseTableViewController.swift */; };
 		8C29B9841F0D49980022DCBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C29B9831F0D49980022DCBE /* AppDelegate.swift */; };
 		8C29B98B1F0D49980022DCBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C29B98A1F0D49980022DCBE /* Assets.xcassets */; };
 		8C29B98E1F0D49980022DCBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C29B98C1F0D49980022DCBE /* LaunchScreen.storyboard */; };
@@ -23,6 +22,12 @@
 		8CD5830A1F0FCA8500D425E0 /* lannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CD583081F0FCA8500D425E0 /* lannister.jpg */; };
 		8CD5830D1F0FCCB700D425E0 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5830C1F0FCCB700D425E0 /* PersonTest.swift */; };
 		8CD5830F1F0FCF6E00D425E0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5830E1F0FCF6E00D425E0 /* Person.swift */; };
+		8CF7997C1F1E5D3900AC30F8 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7997A1F1E5D3900AC30F8 /* WikiViewController.swift */; };
+		8CF7997D1F1E5D3900AC30F8 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7997B1F1E5D3900AC30F8 /* WikiViewController.xib */; };
+		8CF799801F1E71E000AC30F8 /* HousesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7997E1F1E71E000AC30F8 /* HousesTableViewController.swift */; };
+		8CF799811F1E71E000AC30F8 /* HousesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7997F1F1E71E000AC30F8 /* HousesTableViewController.xib */; };
+		8CF799841F1E7E8700AC30F8 /* PersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF799821F1E7E8700AC30F8 /* PersonTableViewController.swift */; };
+		8CF799851F1E7E8700AC30F8 /* PersonTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF799831F1E7E8700AC30F8 /* PersonTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8C128E111F17E8D8000CBB46 /* HouseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseTableViewController.swift; sourceTree = "<group>"; };
 		8C29B9801F0D49980022DCBE /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C29B9831F0D49980022DCBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C29B98A1F0D49980022DCBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +60,12 @@
 		8CD583081F0FCA8500D425E0 /* lannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lannister.jpg; sourceTree = "<group>"; };
 		8CD5830C1F0FCCB700D425E0 /* PersonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
 		8CD5830E1F0FCF6E00D425E0 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8CF7997A1F1E5D3900AC30F8 /* WikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
+		8CF7997B1F1E5D3900AC30F8 /* WikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
+		8CF7997E1F1E71E000AC30F8 /* HousesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesTableViewController.swift; sourceTree = "<group>"; };
+		8CF7997F1F1E71E000AC30F8 /* HousesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HousesTableViewController.xib; sourceTree = "<group>"; };
+		8CF799821F1E7E8700AC30F8 /* PersonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewController.swift; sourceTree = "<group>"; };
+		8CF799831F1E7E8700AC30F8 /* PersonTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +135,12 @@
 			children = (
 				8C31B1921F152AC100B0AB24 /* HouseViewController.swift */,
 				8C31B1931F152AC100B0AB24 /* HouseViewController.xib */,
-				8C128E111F17E8D8000CBB46 /* HouseTableViewController.swift */,
+				8CF7997A1F1E5D3900AC30F8 /* WikiViewController.swift */,
+				8CF7997B1F1E5D3900AC30F8 /* WikiViewController.xib */,
+				8CF7997E1F1E71E000AC30F8 /* HousesTableViewController.swift */,
+				8CF7997F1F1E71E000AC30F8 /* HousesTableViewController.xib */,
+				8CF799821F1E7E8700AC30F8 /* PersonTableViewController.swift */,
+				8CF799831F1E7E8700AC30F8 /* PersonTableViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -245,9 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C5510A51F1709F800BD15E0 /* targaryenSigil.jpg in Resources */,
+				8CF7997D1F1E5D3900AC30F8 /* WikiViewController.xib in Resources */,
 				8CD5830A1F0FCA8500D425E0 /* lannister.jpg in Resources */,
 				8CD583091F0FCA8500D425E0 /* codeIsComing.png in Resources */,
+				8CF799811F1E71E000AC30F8 /* HousesTableViewController.xib in Resources */,
 				8C31B1951F152AC100B0AB24 /* HouseViewController.xib in Resources */,
+				8CF799851F1E7E8700AC30F8 /* PersonTableViewController.xib in Resources */,
 				8C29B98E1F0D49980022DCBE /* LaunchScreen.storyboard in Resources */,
 				8C29B98B1F0D49980022DCBE /* Assets.xcassets in Resources */,
 			);
@@ -270,10 +288,12 @@
 				8CD5830F1F0FCF6E00D425E0 /* Person.swift in Sources */,
 				8CD583051F0FC44500D425E0 /* House.swift in Sources */,
 				8C29B9841F0D49980022DCBE /* AppDelegate.swift in Sources */,
-				8C128E121F17E8D8000CBB46 /* HouseTableViewController.swift in Sources */,
 				8C31B1941F152AC100B0AB24 /* HouseViewController.swift in Sources */,
 				8C55109F1F16771100BD15E0 /* UIKitExtensions.swift in Sources */,
+				8CF799801F1E71E000AC30F8 /* HousesTableViewController.swift in Sources */,
+				8CF7997C1F1E5D3900AC30F8 /* WikiViewController.swift in Sources */,
 				8C5510A31F167C6C00BD15E0 /* Repository.swift in Sources */,
+				8CF799841F1E7E8700AC30F8 /* PersonTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,6 @@
 
 import Foundation
 
-typealias FilteredBy = (House) -> Bool
 
 final class Repository {
     
@@ -18,16 +17,18 @@ final class Repository {
 
 protocol HouseFactory {
     
+    typealias Filter = (House) -> Bool
+    
     var houses : [House] { get }
     func house(named: String) -> House?
-    func houses(filter: FilteredBy) -> [House]?
+    func houses(filteredBy: Filter) -> [House]?
 }
 
 
 final class LocalFactory : HouseFactory {
     
-    func houses(filter: FilteredBy) -> [House]? {
-        return houses.filter(filter)
+    func houses(filteredBy: Filter) -> [House]? {
+        return houses.filter(filteredBy)
     }
 
     var houses : [House] {
@@ -37,9 +38,22 @@ final class LocalFactory : HouseFactory {
             let lannisterSigil = Sigil(image: #imageLiteral(resourceName: "lannister.jpg"), description: "Rampant Lion")
             let targaryenSigil = Sigil(image: #imageLiteral(resourceName: "targaryenSigil.jpg"), description: "Red three-headed dragon")
             
-            let stark = House(name: "Stark", sigil: starkSigil, words: "Winter is coming!")
-            let lannister = House(name: "Lannister", sigil: lannisterSigil, words: "Hear me roar!")
-            let targaryen = House(name: "Targaryen", sigil: targaryenSigil, words: "Fire and blood!")
+            let starkURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Stark")!
+            let lannisterURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Lannister")!
+            let targaryenURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Targaryen")!
+            
+            let stark = House(name: "Stark",
+                              sigil: starkSigil,
+                              words: "Winter is coming!",
+                              url: starkURL)
+            let lannister = House(name: "Lannister",
+                                  sigil: lannisterSigil,
+                                  words: "Hear me roar!",
+                                  url: lannisterURL)
+            let targaryen = House(name: "Targaryen",
+                                  sigil: targaryenSigil,
+                                  words: "Fire and blood!",
+                                  url: targaryenURL)
             
             let robb = Person(name: "Robb", alias: "The young wolf", house: stark)
             let arya = Person(name: "Arya", house: stark)
@@ -55,16 +69,19 @@ final class LocalFactory : HouseFactory {
             let viserys = Person(name: "Viserys", alias: "The beggar king", house: targaryen)
             
             // Añadimos los personajes a las casas
-            stark.add(person: robb)
-            stark.add(person: arya)
-            stark.add(person: eddard)
-            stark.add(person: sansa)
-            lannister.add(person: tywin)
-            lannister.add(person: jaime)
-            lannister.add(person: tyrion)
-            lannister.add(person: cersei)
-            targaryen.add(person: daenerys)
-            targaryen.add(person: viserys)
+//            stark.add(person: robb)
+//            stark.add(person: arya)
+//            stark.add(person: eddard)
+//            stark.add(person: sansa)
+            stark.add(persons: robb, arya, eddard, sansa)
+//            lannister.add(person: tywin)
+//            lannister.add(person: jaime)
+//            lannister.add(person: tyrion)
+//            lannister.add(person: cersei)
+            lannister.add(persons: tywin, jaime, tyrion, cersei)
+//            targaryen.add(person: daenerys)
+//            targaryen.add(person: viserys)
+            targaryen.add(persons: daenerys, viserys)
             
             return [stark, lannister, targaryen].sorted()
         }
@@ -73,7 +90,7 @@ final class LocalFactory : HouseFactory {
     func house(named: String) -> House? {
         return houses.filter({ (house: House) -> Bool in
             return house.name == named
-        }).last
+        }).first
     }
     
 //    func char(named: String, house: String) -> Person? {

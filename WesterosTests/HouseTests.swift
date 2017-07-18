@@ -65,7 +65,9 @@ class HouseTests: XCTestCase {
         XCTAssertEqual(starkHouse, starkHouse)
         
         // Igualdad
-        let jinxed = House(name: "Stark", sigil: starkSigil, words: "Winter is coming!")
+        let jinxed = House(name: "Stark",
+                           sigil: starkSigil, words: "Winter is coming!",
+                           url: URL(string: "http://awoiaf.westeros.org/index.php/House_Stark")!)
         
         let robbJinxed = Person(name: "Robb", alias: "The young wolf", house: jinxed)
         let aryaJinxed = Person(name: "Arya", house: jinxed)
@@ -95,6 +97,7 @@ class HouseTests: XCTestCase {
         XCTAssertEqual(starkHouse, Repository.local.house(named: "Stark"))
         XCTAssertNotEqual(starkHouse, Repository.local.house(named: "Lannister"))
         XCTAssertEqual(Repository.local.house(named: "Stark"), Repository.local.house(named: "Stark"))
+        XCTAssertNil(Repository.local.house(named: "CasaFalsa"))
     }
 }
 

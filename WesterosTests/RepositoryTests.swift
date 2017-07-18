@@ -52,15 +52,19 @@ class RepositoryTests: XCTestCase {
         func filterFail(house: House) -> Bool {
             let omaddonHouse = House(name: "Omaddon",
                                      sigil: (Repository.local.house(named: "Stark")?.sigil)!,
-                                     words: "No words")
+                                     words: "No words",
+                                     url: URL(string: "http://www.google.es")!)
             return house == omaddonHouse
         }
         
-        var result : [House]? = Repository.local.houses(filter: filterStark)
+        var result : [House]? = Repository.local.houses(filteredBy: filterStark)
         XCTAssertNotEqual(result!, [])
         
-        result = Repository.local.houses(filter: filterFail)
+        result = Repository.local.houses(filteredBy: filterFail)
         XCTAssertEqual(result!, [])
+        
+        let filtered = Repository.local.houses(filteredBy: { $0.count == 2 })
+        XCTAssertEqual(filtered?.count, 1)
     }
 }
 

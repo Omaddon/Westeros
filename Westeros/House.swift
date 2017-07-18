@@ -17,16 +17,14 @@ final class House {
     let name    : String
     let sigil   : Sigil
     let words   : Words
+    let wikiURL : URL
     
     private var _members : Members
     
-//    var members : Members {
-//        return _members
-//    }
     
-    init(name: String, sigil: Sigil, words: Words) {
+    init(name: String, sigil: Sigil, words: Words, url: URL) {
         
-        (self.name, self.sigil, self.words) = (name, sigil, words)
+        (self.name, self.sigil, self.words, self.wikiURL) = (name, sigil, words, url)
         _members = Members()
     }
     
@@ -60,7 +58,20 @@ extension House {
         guard person.house == self else {
             return
         }
+        // OJO! 'insert' es un método de Set, por lo que no mete elementos repetidos
         _members.insert(person)
+    }
+    
+    // Variadic Function: permite recibibir varios parámetros, separados por coma. Genera un array.
+    func add(persons: Person...) {
+        for person in persons {
+            add(person: person)
+        }
+    }
+    
+    // Sorted [Person]
+    func sortedMembers() -> [Person] {
+        return _members.sorted()
     }
 }
 
