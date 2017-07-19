@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ArrayDataSource<Element> : NSObject, UITableViewDataSource {
+final class ArrayDataSource<Element>: NSObject, UITableViewDataSource {
     
     typealias Elements = [Element]
     typealias CellMaker = (Element, UITableView) -> UITableViewCell

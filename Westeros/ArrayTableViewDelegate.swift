@@ -1,0 +1,53 @@
+//
+//  ArrayTableViewDelegate.swift
+//  Westeros
+//
+//  Created by MIGUEL JARDÓN PEINADO on 19/7/17.
+//  Copyright © 2017 Ammyt. All rights reserved.
+//
+
+import UIKit
+
+final class ArrayTableViewDelegate<Element>: NSObject, UITableViewDelegate {
+    
+    typealias Elements = [Element]
+    
+    let model : Elements
+    
+    
+    init(model: Elements) {
+        self.model = model
+        
+        super.init()
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // DEBERES
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
