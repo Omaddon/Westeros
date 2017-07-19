@@ -22,6 +22,8 @@
 		8CD5830A1F0FCA8500D425E0 /* lannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CD583081F0FCA8500D425E0 /* lannister.jpg */; };
 		8CD5830D1F0FCCB700D425E0 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5830C1F0FCCB700D425E0 /* PersonTest.swift */; };
 		8CD5830F1F0FCF6E00D425E0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5830E1F0FCF6E00D425E0 /* Person.swift */; };
+		8CDE53B91F1FBEF000D96B34 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDE53B81F1FBEF000D96B34 /* ArrayDataSource.swift */; };
+		8CDE53BB1F1FC3F400D96B34 /* ArrayDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDE53BA1F1FC3F400D96B34 /* ArrayDataSourceTests.swift */; };
 		8CF7997C1F1E5D3900AC30F8 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7997A1F1E5D3900AC30F8 /* WikiViewController.swift */; };
 		8CF7997D1F1E5D3900AC30F8 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7997B1F1E5D3900AC30F8 /* WikiViewController.xib */; };
 		8CF799801F1E71E000AC30F8 /* HousesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7997E1F1E71E000AC30F8 /* HousesTableViewController.swift */; };
@@ -60,6 +62,8 @@
 		8CD583081F0FCA8500D425E0 /* lannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lannister.jpg; sourceTree = "<group>"; };
 		8CD5830C1F0FCCB700D425E0 /* PersonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
 		8CD5830E1F0FCF6E00D425E0 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8CDE53B81F1FBEF000D96B34 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		8CDE53BA1F1FC3F400D96B34 /* ArrayDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSourceTests.swift; sourceTree = "<group>"; };
 		8CF7997A1F1E5D3900AC30F8 /* WikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
 		8CF7997B1F1E5D3900AC30F8 /* WikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
 		8CF7997E1F1E71E000AC30F8 /* HousesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesTableViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				8CD583021F0FC31000D425E0 /* HouseTests.swift */,
 				8CD5830C1F0FCCB700D425E0 /* PersonTest.swift */,
 				8C5510A01F167AB400BD15E0 /* RepositoryTests.swift */,
+				8CDE53BA1F1FC3F400D96B34 /* ArrayDataSourceTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				8CF7997F1F1E71E000AC30F8 /* HousesTableViewController.xib */,
 				8CF799821F1E7E8700AC30F8 /* PersonTableViewController.swift */,
 				8CF799831F1E7E8700AC30F8 /* PersonTableViewController.xib */,
+				8CDE53B81F1FBEF000D96B34 /* ArrayDataSource.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDE53B91F1FBEF000D96B34 /* ArrayDataSource.swift in Sources */,
 				8CD5830F1F0FCF6E00D425E0 /* Person.swift in Sources */,
 				8CD583051F0FC44500D425E0 /* House.swift in Sources */,
 				8C29B9841F0D49980022DCBE /* AppDelegate.swift in Sources */,
@@ -303,6 +310,7 @@
 			files = (
 				8CD583031F0FC31000D425E0 /* HouseTests.swift in Sources */,
 				8CD5830D1F0FCCB700D425E0 /* PersonTest.swift in Sources */,
+				8CDE53BB1F1FC3F400D96B34 /* ArrayDataSourceTests.swift in Sources */,
 				8C5510A11F167AB400BD15E0 /* RepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
