@@ -46,6 +46,14 @@ class HouseViewController: UIViewController {
         navigationController?.pushViewController(wikiVC, animated: true)
     }
     
+    @objc func displayPersons(recognizer: UITapGestureRecognizer) {
+        
+        let personVC = PersonTableViewController(model: self.model)
+        
+        self.navigationController?.pushViewController(personVC, animated: true)
+        
+    }
+    
     func setupUI() {
         // Creamos un botón
         let wikiButton = UIBarButtonItem(title: "Wiki",
@@ -53,13 +61,13 @@ class HouseViewController: UIViewController {
                                          target: self,
                                          action: #selector(displayWiki))
         
-        let houseButton = UIBarButtonItem(title: "Persons",
+        let houseButton = UIBarButtonItem(title: "Members",
                                           style: .plain,
                                           target: self,
                                           action: #selector(displayPersons))
         
         // Añadimos el botón a la barra del navigationController
-        navigationItem.rightBarButtonItems = [wikiButton, houseButton]
+        navigationItem.rightBarButtonItems = [houseButton, wikiButton]
         
     }
     
@@ -79,13 +87,6 @@ class HouseViewController: UIViewController {
         sigilImageView.addGestureRecognizer(tapGesture)
     }
     
-    @objc func displayPersons(recognizer: UITapGestureRecognizer) {
-        
-        let personVC = PersonTableViewController(model: self.model)
-        
-        self.navigationController?.pushViewController(personVC, animated: true)
-        
-    }
 }
 
 
