@@ -11,12 +11,14 @@ import UIKit
 final class ArrayTableViewDelegate<Element>: NSObject, UITableViewDelegate {
     
     typealias Elements = [Element]
+    typealias ControllerMaker = (Element) -> ()
     
-    let model : Elements
+    private let _model       : Elements
+    private let _controller  : ControllerMaker
     
     
-    init(model: Elements) {
-        self.model = model
+    init(model: Elements, controller: @escaping ControllerMaker) {
+        (_model, _controller) = (model, controller)
         
         super.init()
     }
@@ -25,9 +27,20 @@ final class ArrayTableViewDelegate<Element>: NSObject, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // DEBERES
+        
+        let element = _model[indexPath.row]
+        _controller(element)
+        
     }
     
 }
+
+
+
+
+
+
+
 
 
 

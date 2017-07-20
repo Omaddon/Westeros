@@ -23,6 +23,7 @@ final class DataSources {
             cell?.imageView?.image = house.sigil.image
             cell?.textLabel?.text = house.name
             cell?.detailTextLabel?.text = "\(house.count) members"
+            cell?.accessoryType = .disclosureIndicator
             
             return cell!
         })

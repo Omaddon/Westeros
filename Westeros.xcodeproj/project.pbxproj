@@ -192,8 +192,8 @@
 			children = (
 				8CDE53C41F1FD18200D96B34 /* Delegates */,
 				8CDE53C31F1FD17300D96B34 /* DataSources */,
-				8CDE53B81F1FBEF000D96B34 /* ArrayDataSource.swift */,
 				8CDE53BC1F1FC9B900D96B34 /* ArrayTableViewController.swift */,
+				8CDE53B81F1FBEF000D96B34 /* ArrayDataSource.swift */,
 				8CDE53C11F1FD0B200D96B34 /* ArrayTableViewDelegate.swift */,
 			);
 			name = Generics;
