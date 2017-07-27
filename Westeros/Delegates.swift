@@ -30,7 +30,9 @@ final class Delegates {
         
         return ArrayTableViewDelegate(model: model, controller: { (person: Person) in
             
-            // Cuado se pulsa en una celda de PersonTableViewController, no navega más
+            let elementVC = PersonWikiViewController(model: person)
+            
+            nav.pushViewController(elementVC, animated: true)
             
         })
     }

@@ -40,6 +40,7 @@ final class DataSources {
             }
             
             cell?.textLabel?.text = person.fullName
+            cell?.accessoryType = .disclosureIndicator
             
             return cell!
         })
