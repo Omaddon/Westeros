@@ -19,6 +19,7 @@ final class Person {
     // Variables de instancia
     let name    : String
     let house   : House
+    let wikiURL : URL?
     private let _alias   : String?
     
     // Variable computada
@@ -40,14 +41,18 @@ final class Person {
         }
     }
     
-    init(name: String, alias: String?, house: House) {
+    init(name: String, alias: String?, house: House, url: URL?) {
         
-        (self.name, _alias, self.house) = (name, alias, house)
+        (self.name, _alias, self.house, self.wikiURL) = (name, alias, house, url)
     }
     
     
     convenience init(name: String, house: House) {
-        self.init(name: name, alias: nil, house: house)
+        self.init(name: name, alias: nil, house: house, url: nil)
+    }
+    
+    convenience init(name: String, house: House, url: URL?) {
+        self.init(name: name, alias: nil, house: house, url: url)
     }
     
 //    init(name: String, house: House) {

@@ -537,18 +537,45 @@ final class LocalFactory : HouseFactory {
                                   words: "Fire and blood!",
                                   url: targaryenURL)
             
-            let robb = Person(name: "Robb", alias: "The young wolf", house: stark)
-            let arya = Person(name: "Arya", house: stark)
-            let eddard = Person(name: "Eddard", alias: "The king in the North", house: stark)
-            let sansa = Person(name: "Sansa", house: stark)
+            let robb = Person(name: "Robb",
+                              alias: "The young wolf",
+                              house: stark,
+                              url: URL(string: "https://awoiaf.westeros.org/index.php/Robb_Stark"))
+            let arya = Person(name: "Arya",
+                              house: stark,
+                              url: URL(string: "https://awoiaf.westeros.org/index.php/Arya_Stark"))
+            let eddard = Person(name: "Eddard",
+                                alias: "The king in the North",
+                                house: stark,
+                                url: URL(string: "https://awoiaf.westeros.org/index.php/Eddard_Stark"))
+            let sansa = Person(name: "Sansa",
+                               house: stark,
+                               url: URL(string: "https://awoiaf.westeros.org/index.php/Sansa_Stark"))
             
-            let tywin = Person(name: "Tywin", alias: "The Lion of Lannister", house: lannister)
-            let jaime = Person(name: "Jaime", alias: "Kingslayer", house: lannister)
-            let tyrion = Person(name: "Tyrion", alias: "The Imp", house: lannister)
-            let cersei = Person(name: "Cersei", house: lannister)
+            let tywin = Person(name: "Tywin",
+                               alias: "The Lion of Lannister",
+                               house: lannister,
+                               url: URL(string: "https://awoiaf.westeros.org/index.php/Tywin_Lannister"))
+            let jaime = Person(name: "Jaime",
+                               alias: "Kingslayer",
+                               house: lannister,
+                               url: URL(string: "https://awoiaf.westeros.org/index.php/Jaime_Lannister"))
+            let tyrion = Person(name: "Tyrion",
+                                alias: "The Imp",
+                                house: lannister,
+                                url: URL(string: "https://awoiaf.westeros.org/index.php/Tyrion_Lannister"))
+            let cersei = Person(name: "Cersei",
+                                house: lannister,
+                                url: URL(string: "https://awoiaf.westeros.org/index.php/Cersei_Lannister"))
             
-            let daenerys = Person(name: "Daenerys", alias: "Khaleesi", house: targaryen)
-            let viserys = Person(name: "Viserys", alias: "The beggar king", house: targaryen)
+            let daenerys = Person(name: "Daenerys",
+                                  alias: "Khaleesi",
+                                  house: targaryen,
+                                  url: URL(string: "https://awoiaf.westeros.org/index.php/Daenerys_Targaryen"))
+            let viserys = Person(name: "Viserys",
+                                 alias: "The beggar king",
+                                 house: targaryen,
+                                 url: URL(string: "https://awoiaf.westeros.org/index.php/Viserys_Targaryen"))
             
             // Añadimos los personajes a las casas
 //            stark.add(person: robb)

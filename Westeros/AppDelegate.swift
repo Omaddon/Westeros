@@ -35,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                 style       : .plain)
         
         navHouse.pushViewController(housesVC, animated: true)
+//        navHouse.tabBarItem.image = UIImage(named: "houses.jpg")
         
         
         let dataSourceSeason = DataSources.seasonDataSource(model: seasons)
@@ -46,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                 style       : .plain)
         
         navSeason.pushViewController(seasonVC, animated: true)
+//        navSeason.tabBarItem.image = UIImage(named: "westeros.png")
         
         
         let tabBar = UITabBarController()
