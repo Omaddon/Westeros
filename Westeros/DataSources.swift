@@ -44,4 +44,77 @@ final class DataSources {
             return cell!
         })
     }
+    
+    static func seasonDataSource(model: [Season]) -> ArrayDataSource<Season> {
+        return ArrayDataSource(model: model, cellMake: { (season: Season, tableView: UITableView) -> UITableViewCell in
+            
+            let cellID = "SeasonCell"
+            var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+            
+            if cell == nil {
+                cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
+            }
+            
+            cell?.textLabel?.text = season.description
+            cell?.detailTextLabel?.text = season.formatter.string(from: season.date)
+            cell?.accessoryType = .disclosureIndicator
+            
+            return cell!
+            
+        })
+    }
+    
+    static func episodesDataSource(model: [Episode]) -> ArrayDataSource<Episode> {
+        return ArrayDataSource(model: model, cellMake: { (episode: Episode, tableView: UITableView) -> UITableViewCell in
+            
+            let cellID = "EpisodeCell"
+            var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+            
+            if cell == nil {
+                cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
+            }
+            
+            cell?.textLabel?.text = episode.description
+            cell?.detailTextLabel?.text = episode.formatter.string(from: episode.emitOn)
+            cell?.accessoryType = .disclosureIndicator
+            
+            return cell!
+            
+        })
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

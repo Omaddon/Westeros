@@ -23,20 +23,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Creamos unos modelos
         let houses = Repository.local.houses
+        let seasons = Repository.local.seasons
         
         // Creamos los controladores
-        let dataSource = DataSources.houseDataSource(model: houses)
-        let nav = UINavigationController()
-        let delegate = Delegates.housesDelegate(model: houses, nav: nav)
-        let housesVC = ArrayTableViewController(dataSource  : dataSource,
-                                                delegate    : delegate,
+        let dataSourceHouse = DataSources.houseDataSource(model: houses)
+        let navHouse = UINavigationController()
+        let delegateHouse = Delegates.housesDelegate(model: houses, nav: navHouse)
+        let housesVC = ArrayTableViewController(dataSource  : dataSourceHouse,
+                                                delegate    : delegateHouse,
                                                 title       : "Westeros",
                                                 style       : .plain)
         
-        nav.pushViewController(housesVC, animated: true)
+        navHouse.pushViewController(housesVC, animated: true)
+        
+        
+        let dataSourceSeason = DataSources.seasonDataSource(model: seasons)
+        let navSeason = UINavigationController()
+        let delegateSeason = Delegates.seasonDelegate(model: seasons, nav: navSeason)
+        let seasonVC = ArrayTableViewController(dataSource  : dataSourceSeason,
+                                                delegate    : delegateSeason,
+                                                title       : "Seasons",
+                                                style       : .plain)
+        
+        navSeason.pushViewController(seasonVC, animated: true)
+        
+        
+        let tabBar = UITabBarController()
+        tabBar.viewControllers = [navSeason, navHouse]
+//        UINavigationController().pushViewController(tabBar, animated: true)
+        
         
         // Asignamos el rootVC
-        window?.rootViewController = nav
+        window?.rootViewController = tabBar
         
         return true
     }

@@ -22,6 +22,9 @@
 		8CD5830A1F0FCA8500D425E0 /* lannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CD583081F0FCA8500D425E0 /* lannister.jpg */; };
 		8CD5830D1F0FCCB700D425E0 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5830C1F0FCCB700D425E0 /* PersonTest.swift */; };
 		8CD5830F1F0FCF6E00D425E0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5830E1F0FCF6E00D425E0 /* Person.swift */; };
+		8CD62E081F2976B200E9AF2A /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD62E071F2976B200E9AF2A /* Season.swift */; };
+		8CD62E0A1F29770200E9AF2A /* SeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD62E091F29770200E9AF2A /* SeasonTests.swift */; };
+		8CD62E0C1F29789400E9AF2A /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD62E0B1F29789400E9AF2A /* Episode.swift */; };
 		8CDE53B91F1FBEF000D96B34 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDE53B81F1FBEF000D96B34 /* ArrayDataSource.swift */; };
 		8CDE53BB1F1FC3F400D96B34 /* ArrayDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDE53BA1F1FC3F400D96B34 /* ArrayDataSourceTests.swift */; };
 		8CDE53BD1F1FC9B900D96B34 /* ArrayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDE53BC1F1FC9B900D96B34 /* ArrayTableViewController.swift */; };
@@ -66,6 +69,9 @@
 		8CD583081F0FCA8500D425E0 /* lannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lannister.jpg; sourceTree = "<group>"; };
 		8CD5830C1F0FCCB700D425E0 /* PersonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
 		8CD5830E1F0FCF6E00D425E0 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8CD62E071F2976B200E9AF2A /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		8CD62E091F29770200E9AF2A /* SeasonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonTests.swift; sourceTree = "<group>"; };
+		8CD62E0B1F29789400E9AF2A /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		8CDE53B81F1FBEF000D96B34 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
 		8CDE53BA1F1FC3F400D96B34 /* ArrayDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSourceTests.swift; sourceTree = "<group>"; };
 		8CDE53BC1F1FC9B900D96B34 /* ArrayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTableViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +145,7 @@
 				8CD5830C1F0FCCB700D425E0 /* PersonTest.swift */,
 				8C5510A01F167AB400BD15E0 /* RepositoryTests.swift */,
 				8CDE53BA1F1FC3F400D96B34 /* ArrayDataSourceTests.swift */,
+				8CD62E091F29770200E9AF2A /* SeasonTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -172,6 +179,8 @@
 			children = (
 				8CD583041F0FC44500D425E0 /* House.swift */,
 				8CD5830E1F0FCF6E00D425E0 /* Person.swift */,
+				8CD62E071F2976B200E9AF2A /* Season.swift */,
+				8CD62E0B1F29789400E9AF2A /* Episode.swift */,
 				8C5510A21F167C6C00BD15E0 /* Repository.swift */,
 			);
 			name = Models;
@@ -328,8 +337,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CDE53BD1F1FC9B900D96B34 /* ArrayTableViewController.swift in Sources */,
+				8CD62E0C1F29789400E9AF2A /* Episode.swift in Sources */,
 				8CDE53B91F1FBEF000D96B34 /* ArrayDataSource.swift in Sources */,
 				8CDE53C61F1FD1B400D96B34 /* Delegates.swift in Sources */,
+				8CD62E081F2976B200E9AF2A /* Season.swift in Sources */,
 				8CDE53C21F1FD0B200D96B34 /* ArrayTableViewDelegate.swift in Sources */,
 				8CD5830F1F0FCF6E00D425E0 /* Person.swift in Sources */,
 				8CD583051F0FC44500D425E0 /* House.swift in Sources */,
@@ -348,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD62E0A1F29770200E9AF2A /* SeasonTests.swift in Sources */,
 				8CD583031F0FC31000D425E0 /* HouseTests.swift in Sources */,
 				8CD5830D1F0FCCB700D425E0 /* PersonTest.swift in Sources */,
 				8CDE53BB1F1FC3F400D96B34 /* ArrayDataSourceTests.swift in Sources */,

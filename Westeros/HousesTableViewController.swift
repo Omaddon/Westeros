@@ -8,6 +8,10 @@
 
 import UIKit
 
+/**
+    NO SE USA -> Tabla genérica
+ **/
+
 class HousesTableViewController: UITableViewController {
     
     var model : [House]

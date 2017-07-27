@@ -26,8 +26,6 @@ final class ArrayTableViewDelegate<Element>: NSObject, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        // DEBERES
-        
         let element = _model[indexPath.row]
         _controller(element)
         

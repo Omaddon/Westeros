@@ -48,9 +48,17 @@ class HouseViewController: UIViewController {
     
     @objc func displayPersons(recognizer: UITapGestureRecognizer) {
         
-        let personVC = PersonTableViewController(model: self.model)
         
-        self.navigationController?.pushViewController(personVC, animated: true)
+        let dataSource = DataSources.personDataSource(model: model.sortedMembers())
+        let nav = self.navigationController
+        let delegate = Delegates.personsDelegate(model: model.sortedMembers(), nav: nav!)
+        let personsVC = ArrayTableViewController(dataSource  : dataSource,
+                                                delegate    : delegate,
+                                                title       : model.name,
+                                                style       : .plain)
+
+//        let personVC = PersonTableViewController(model: self.model)
+        self.navigationController?.pushViewController(personsVC, animated: true)
         
     }
     
