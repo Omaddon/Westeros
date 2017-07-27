@@ -169,7 +169,7 @@ final class LocalFactory : HouseFactory {
                                     chars: chars,
                                     season: season4))
             episodes.append(Episode(title: "The lion and the rose",
-                                    emitOn: "13/04/2012",
+                                    emitOn: "13/04/2014",
                                     number: 2,
                                     chars: chars,
                                     season: season4))
