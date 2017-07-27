@@ -73,67 +73,13 @@ final class LocalFactory : HouseFactory {
                                     number: 1,
                                     chars: chars,
                                     season: season1))
-        
+            
             episodes.append(Episode(title: "The kingsroad",
                                     emitOn: "16/05/2011",
                                     number: 2,
                                     chars: chars,
                                     season: season1))
             
-            episodes.append(Episode(title: "Lord Snow",
-                                    emitOn: "23/05/2011",
-                                    number: 3,
-                                    chars: chars,
-                                    season: season1))
-            
-            episodes.append(Episode(title: "Lord Snow",
-                                    emitOn: "23/05/2011",
-                                    number: 3,
-                                    chars: chars,
-                                    season: season1))
-            
-            episodes.append(Episode(title: "Cripples, Bastards, and Broken Things",
-                                    emitOn: "30/05/2011",
-                                    number: 4,
-                                    chars: chars,
-                                    season: season1))
-            
-            episodes.append(Episode(title: "The Wolf and the Lion",
-                                    emitOn: "06/06/2011",
-                                    number: 5,
-                                    chars: chars,
-                                    season: season1))
-            
-            episodes.append(Episode(title: "A Golden Crown",
-                                    emitOn: "13/06/2011",
-                                    number: 6,
-                                    chars: chars,
-                                    season: season1))
-            
-            episodes.append(Episode(title: "You Win or You Die",
-                                    emitOn: "20/06/2011",
-                                    number: 7,
-                                    chars: chars,
-                                    season: season1))
-            
-            episodes.append(Episode(title: "The Pointy End",
-                                    emitOn: "27/06/2011",
-                                    number: 8,
-                                    chars: chars,
-                                    season: season1))
-            
-            episodes.append(Episode(title: "Baelor",
-                                    emitOn: "04/07/2011",
-                                    number: 9,
-                                    chars: chars,
-                                    season: season1))
-            
-            episodes.append(Episode(title: "Fire and Blood",
-                                    emitOn: "11/07/2011",
-                                    number: 10,
-                                    chars: chars,
-                                    season: season1))
-
             season1.add(episodes: episodes)
             episodes = []
             
