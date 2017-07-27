@@ -56,7 +56,7 @@ final class DataSources {
             }
             
             cell?.textLabel?.text = season.description
-            cell?.detailTextLabel?.text = season.formatter.string(from: season.date)
+            cell?.detailTextLabel?.text = "Release: \(season.formatter.string(from: season.date))"
             cell?.accessoryType = .disclosureIndicator
             
             return cell!
