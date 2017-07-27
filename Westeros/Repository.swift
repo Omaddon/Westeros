@@ -42,54 +42,139 @@ final class LocalFactory : HouseFactory {
     var seasons : [Season] {
         get {
             
-            var s1episodes : [Episode] = []
-            var s2episodes : [Episode] = []
-//            var s3episodes : [Episode] = []
-//            var s4episodes : [Episode] = []
-//            var s5episodes : [Episode] = []
-//            var s6episodes : [Episode] = []
-//            var s7episodes : [Episode] = []
+            // SEASONS
+            let season1 = Season(name: "Season 1", date: "09/05/2011")
+            let season2 = Season(name: "Season 2", date: "01/04/2012")
+            let season3 = Season(name: "Season 3", date: "31/03/2013")
+            let season4 = Season(name: "Season 4", date: "06/04/2014")
+            let season5 = Season(name: "Season 5", date: "12/04/2015")
+            let season6 = Season(name: "Season 6", date: "24/04/2016")
+            let season7 = Season(name: "Season 7", date: "16/07/2017")
             
+            // PERSONS by Episodes
+            let houses = self.houses
+            var persons = [Person]()
+            
+            for house in houses {
+                for person in house.sortedMembers() {
+                    persons.append(person)
+                }
+            }
+            
+            let chars = persons.sorted()
+            
+            
+            // EPISODES
+            var episodes = [Episode]()
+            
+            // Episodes Season 1
+            episodes.append(Episode(title: "Winter is coming",
+                                    emitOn: "09/05/2011",
+                                    number: 1,
+                                    chars: chars,
+                                    season: season1))
+            
+            episodes.append(Episode(title: "The kingsroad",
+                                    emitOn: "16/05/2011",
+                                    number: 2,
+                                    chars: chars,
+                                    season: season1))
+            
+            season1.add(episodes: episodes)
+            episodes = []
+            
+            // Episodes Season 2
+            episodes.append(Episode(title: "The North remembers",
+                                    emitOn: "01/04/2012",
+                                    number: 1,
+                                    chars: chars,
+                                    season: season2))
+            episodes.append(Episode(title: "The night lands",
+                                    emitOn: "08/04/2012",
+                                    number: 2,
+                                    chars: chars,
+                                    season: season2))
+            
+            season2.add(episodes: episodes)
+            episodes = []
 
-            s1episodes.append(Episode(title: "Winter is coming",
-                                      emitOn: "09/05/2011 22:30",
-                                      season: "Season 1"))
-            s1episodes.append(Episode(title: "The kingsroad",
-                                            emitOn: "16/05/2011 22:30",
-                                            season: "Season 1"))
+            // Episodes Season 3
+            episodes.append(Episode(title: "Valar Dohaeris",
+                                    emitOn: "31/03/2013",
+                                    number: 1,
+                                    chars: chars,
+                                    season: season3))
+            episodes.append(Episode(title: "Dark wings, dark words",
+                                    emitOn: "07/04/2013",
+                                    number: 2,
+                                    chars: chars,
+                                    season: season3))
             
-            s2episodes.append(Episode(title: "The north remembers",
-                                      emitOn: "01/04/2012 22:30",
-                                      season: "Season 2"))
-            s2episodes.append(Episode(title: "The night lands",
-                                      emitOn: "08/04/2012 22:30",
-                                      season: "Season 2"))
+            season3.add(episodes: episodes)
+            episodes = []
+            
+            // Episodes Season 4
+            episodes.append(Episode(title: "Two swords",
+                                    emitOn: "06/04/2014",
+                                    number: 1,
+                                    chars: chars,
+                                    season: season4))
+            episodes.append(Episode(title: "The lion and the rose",
+                                    emitOn: "13/04/2012",
+                                    number: 2,
+                                    chars: chars,
+                                    season: season4))
+            
+            season4.add(episodes: episodes)
+            episodes = []
+            
+            // Episodes Season 5
+            episodes.append(Episode(title: "The war to come",
+                                    emitOn: "12/04/2015",
+                                    number: 1,
+                                    chars: chars,
+                                    season: season5))
+            episodes.append(Episode(title: "The house of black and white",
+                                    emitOn: "19/04/2015",
+                                    number: 2,
+                                    chars: chars,
+                                    season: season5))
+            
+            season5.add(episodes: episodes)
+            episodes = []
+            
+            // Episodes Season 6
+            episodes.append(Episode(title: "The red woman",
+                                    emitOn: "24/04/2016",
+                                    number: 1,
+                                    chars: chars,
+                                    season: season6))
+            episodes.append(Episode(title: "Home",
+                                    emitOn: "01/05/2016",
+                                    number: 2,
+                                    chars: chars,
+                                    season: season6))
+            
+            season6.add(episodes: episodes)
+            episodes = []
+            
+            // Episodes Season 7
+            episodes.append(Episode(title: "Dragonstone",
+                                    emitOn: "16/07/2017",
+                                    number: 1,
+                                    chars: chars,
+                                    season: season7))
+            episodes.append(Episode(title: "Stormborn",
+                                    emitOn: "23/07/2017",
+                                    number: 2,
+                                    chars: chars,
+                                    season: season7))
+            
+            season7.add(episodes: episodes)
+            episodes = []
             
             
-            let s1 = Season(episodes: s1episodes,
-                            name: "Season 1",
-                            date: "09/05/2011 22:30")
-            let s2 = Season(episodes: s2episodes,
-                            name: "Season 2",
-                            date: "01/04/2012 22:30")
-            let s3 = Season(episodes: s2episodes,
-                            name: "Season 3",
-                            date: "01/04/2013 22:30")
-            let s4 = Season(episodes: s2episodes,
-                            name: "Season 4",
-                            date: "01/04/2014 22:30")
-            let s5 = Season(episodes: s2episodes,
-                            name: "Season 5",
-                            date: "01/04/2015 22:30")
-            let s6 = Season(episodes: s2episodes,
-                            name: "Season 6",
-                            date: "01/04/2016 22:30")
-            let s7 = Season(episodes: s2episodes,
-                            name: "Season 7",
-                            date: "01/04/2017 22:30")
-            
-            
-            return [s1, s2, s3, s4 ,s5, s6, s7].sorted()
+            return [season1, season2, season3, season4, season5, season6, season7].sorted()
             
         }
     }

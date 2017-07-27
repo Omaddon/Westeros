@@ -69,7 +69,7 @@ extension Person {
 
 extension Person {
     var proxy : String {
-        return "\(name) \(alias) \(house.name)"
+        return "\(house.name) \(name) \(alias)"
     }
 }
 

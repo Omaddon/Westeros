@@ -59,7 +59,15 @@ final class Delegates {
         
         return ArrayTableViewDelegate(model: model, controller: { (episode: Episode) in
             
-
+            let dataSource = DataSources.personDataSource(model: episode.sortedMembers())
+            let delegate = Delegates.personsDelegate(model: episode.sortedMembers(),
+                                                     nav: nav)
+            let elementVC = ArrayTableViewController(dataSource: dataSource,
+                                                     delegate: delegate,
+                                                     title: "Episode \(episode.number) - Characters",
+                                                     style: .plain)
+            
+            nav.pushViewController(elementVC, animated: true)
             
         })
         

@@ -74,7 +74,7 @@ final class DataSources {
                 cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
             }
             
-            cell?.textLabel?.text = episode.description
+            cell?.textLabel?.text = "Episodio \(episode.number): \(episode.description)"
             cell?.detailTextLabel?.text = episode.formatter.string(from: episode.emitOn)
             cell?.accessoryType = .disclosureIndicator
             

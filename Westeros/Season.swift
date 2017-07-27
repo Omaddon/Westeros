@@ -13,17 +13,19 @@ final class Season {
 
     let formatter = DateFormatter()
 
-    private let _episodes   : [Episode]
+    private var _episodes   : [Episode]
     let name                : String
     let date                : Date
     
-    init(episodes: [Episode], name: String, date: String) {
+    init(name: String, date: String) {
         
-        (_episodes, self.name) = (episodes, name)
+        self.name = name
         
-        self.formatter.dateFormat = "dd/MM/yyyy HH:mm"
+        _episodes = [Episode]()
+        
+        self.formatter.dateFormat = "dd/MM/yyyy"
         self.date = formatter.date(from: date)!
-//        "08/10/2016 22:31"
+//        "08/10/2016"
     }
 }
 
@@ -33,6 +35,27 @@ extension Season {
     
     var count : Int {
         return _episodes.count
+    }
+    
+    func add(episode: Episode) {
+        
+        guard episode.season == self else {
+            return
+        }
+        
+        _episodes.append(episode)
+    }
+    
+    func add(episodes: Episode...) {
+        for episode in episodes {
+            add(episode: episode)
+        }
+    }
+    
+    func add(episodes: [Episode]) {
+        for episode in episodes {
+            add(episode: episode)
+        }
     }
     
     func sortedMembers() -> [Episode] {
