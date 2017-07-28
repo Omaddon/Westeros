@@ -445,7 +445,7 @@ final class LocalFactory : HouseFactory {
                                     season: season6))
             
             episodes.append(Episode(title: "Battle of the Bastards",
-                                    emitOn: "19/05/2016",
+                                    emitOn: "19/06/2016",
                                     number: 9,
                                     chars: chars,
                                     season: season6))
