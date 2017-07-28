@@ -102,6 +102,8 @@
 		8C65F7951F2ADA6A00913BD2 /* season3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C65F7911F2ADA6A00913BD2 /* season3.png */; };
 		8C65F7961F2ADA6A00913BD2 /* season4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C65F7921F2ADA6A00913BD2 /* season4.png */; };
 		8C65F7971F2ADA6A00913BD2 /* season5.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C65F7931F2ADA6A00913BD2 /* season5.png */; };
+		8C65F79C1F2ADFAD00913BD2 /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C65F79A1F2ADFAD00913BD2 /* map.jpg */; };
+		8C65F7A11F2AE80E00913BD2 /* throneIron.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C65F7A01F2AE80E00913BD2 /* throneIron.png */; };
 		8CD583031F0FC31000D425E0 /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD583021F0FC31000D425E0 /* HouseTests.swift */; };
 		8CD583051F0FC44500D425E0 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD583041F0FC44500D425E0 /* House.swift */; };
 		8CD583091F0FCA8500D425E0 /* codeIsComing.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD583071F0FCA8500D425E0 /* codeIsComing.png */; };
@@ -235,6 +237,8 @@
 		8C65F7911F2ADA6A00913BD2 /* season3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = season3.png; sourceTree = "<group>"; };
 		8C65F7921F2ADA6A00913BD2 /* season4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = season4.png; sourceTree = "<group>"; };
 		8C65F7931F2ADA6A00913BD2 /* season5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = season5.png; sourceTree = "<group>"; };
+		8C65F79A1F2ADFAD00913BD2 /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpg; sourceTree = "<group>"; };
+		8C65F7A01F2AE80E00913BD2 /* throneIron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = throneIron.png; sourceTree = "<group>"; };
 		8CD583021F0FC31000D425E0 /* HouseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
 		8CD583041F0FC44500D425E0 /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		8CD583071F0FCA8500D425E0 /* codeIsComing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeIsComing.png; sourceTree = "<group>"; };
@@ -363,6 +367,8 @@
 		8CD5830B1F0FCA8D00D425E0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8C65F79A1F2ADFAD00913BD2 /* map.jpg */,
+				8C65F7A01F2AE80E00913BD2 /* throneIron.png */,
 				8C65F6DE1F2A553200913BD2 /* houses.jpg */,
 				8C65F6E01F2A553C00913BD2 /* westeros.png */,
 				8C5510A41F1709F800BD15E0 /* targaryenSigil.jpg */,
@@ -617,6 +623,7 @@
 				8C65F78A1F2AD86500913BD2 /* season2.png in Resources */,
 				8C65F7621F2AD55800913BD2 /* 4x4.jpg in Resources */,
 				8C65F7801F2AD55800913BD2 /* 7x4.jpg in Resources */,
+				8C65F79C1F2ADFAD00913BD2 /* map.jpg in Resources */,
 				8C65F6F71F2ACC4000913BD2 /* cerseiLannister.png in Resources */,
 				8C31B1951F152AC100B0AB24 /* HouseViewController.xib in Resources */,
 				8C65F6FE1F2ACC4000913BD2 /* tywinLannister.jpg in Resources */,
@@ -626,6 +633,7 @@
 				8C65F6FD1F2ACC4000913BD2 /* tyrionLannister.jpg in Resources */,
 				8C65F70D1F2AD0C100913BD2 /* 1x4.jpg in Resources */,
 				8C65F7681F2AD55800913BD2 /* 4x10.jpg in Resources */,
+				8C65F7A11F2AE80E00913BD2 /* throneIron.png in Resources */,
 				8C65F7941F2ADA6A00913BD2 /* season1.png in Resources */,
 				8C65F7701F2AD55800913BD2 /* 5x8.jpg in Resources */,
 				8C65F75B1F2AD55800913BD2 /* 3x7.jpg in Resources */,

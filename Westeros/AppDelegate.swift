@@ -35,7 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                 style       : .plain)
         
         navHouse.pushViewController(housesVC, animated: true)
-//        navHouse.tabBarItem.image = UIImage(named: "houses.jpg")
+        navHouse.tabBarItem.image = UIImage(named: "throneIron.png")?.withRenderingMode(.alwaysOriginal)
+        navHouse.navigationBar.tintColor = UIColor.white
+        navHouse.navigationBar.barStyle = UIBarStyle.black
         
         
         let dataSourceSeason = DataSources.seasonDataSource(model: seasons)
@@ -47,11 +49,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                 style       : .plain)
         
         navSeason.pushViewController(seasonVC, animated: true)
-//        navSeason.tabBarItem.image = UIImage(named: "westeros.png")
+        navSeason.tabBarItem.image = UIImage(named: "map.jpg")?.withRenderingMode(.alwaysOriginal)
+        navSeason.navigationBar.tintColor = UIColor.white
+        navSeason.navigationBar.barStyle = UIBarStyle.black
+        
         
         
         let tabBar = UITabBarController()
         tabBar.viewControllers = [navSeason, navHouse]
+        tabBar.tabBar.barTintColor = UIColor.darkGray
+        tabBar.tabBar.tintColor = UIColor.white
+        tabBar.tabBar.unselectedItemTintColor = UIColor.black
 //        UINavigationController().pushViewController(tabBar, animated: true)
         
         
