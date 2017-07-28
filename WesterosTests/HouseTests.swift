@@ -17,8 +17,8 @@ class HouseTests: XCTestCase {
     var starkHouse      : House!
     var lannisterHouse  : House!
     
-    var lyanna     : Person!
-    var martyn     : Person!
+    var lyanna          : Person!
+    var martyn          : Person!
     
     override func setUp() {
         super.setUp()
@@ -29,8 +29,8 @@ class HouseTests: XCTestCase {
         starkSigil = starkHouse.sigil
         lannisterSigil = lannisterHouse.sigil
         
-        lyanna = Person(name: "Lyanna", house: starkHouse)
-        martyn = Person(name: "Martyn", house: lannisterHouse)
+        lyanna = Person(name: "Lyanna", house: starkHouse, image: UIImage(named: "noimage.jpg")!)
+        martyn = Person(name: "Martyn", house: lannisterHouse, image: UIImage(named: "noimage.jpg")!)
         
     }
     
@@ -67,12 +67,24 @@ class HouseTests: XCTestCase {
         // Igualdad
         let jinxed = House(name: "Stark",
                            sigil: starkSigil, words: "Winter is coming!",
-                           url: URL(string: "http://awoiaf.westeros.org/index.php/House_Stark")!)
+                           url: URL(string: "https://awoiaf.westeros.org/index.php/House_Stark")!)
         
-        let robbJinxed = Person(name: "Robb", alias: "The young wolf", house: jinxed)
-        let aryaJinxed = Person(name: "Arya", house: jinxed)
-        let eddardJinxed = Person(name: "Eddard", alias: "The king in the North", house: jinxed)
-        let sansaJinxed = Person(name: "Sansa", house: jinxed)
+        let robbJinxed = Person(name: "Robb",
+                                alias: "The young wolf",
+                                house: jinxed,
+                                url: URL(string: "https://awoiaf.westeros.org/index.php/Robb_Stark"),
+                                image: UIImage(named: "noimage.jpg")!)
+        let aryaJinxed = Person(name: "Arya",
+                                house: jinxed,
+                                image: UIImage(named: "noimage.jpg")!)
+        let eddardJinxed = Person(name: "Eddard",
+                                  alias: "The king in the North",
+                                  house: jinxed,
+                                  url: URL(string: "https://awoiaf.westeros.org/index.php/Eddard_Stark"),
+                                  image: UIImage(named: "noimage.jpg")!)
+        let sansaJinxed = Person(name: "Sansa",
+                                 house: jinxed,
+                                 image: UIImage(named: "noimage.jpg")!)
         
         jinxed.add(person: robbJinxed)
         jinxed.add(person: aryaJinxed)

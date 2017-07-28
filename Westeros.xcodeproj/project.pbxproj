@@ -16,6 +16,7 @@
 		8C5510A11F167AB400BD15E0 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5510A01F167AB400BD15E0 /* RepositoryTests.swift */; };
 		8C5510A31F167C6C00BD15E0 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5510A21F167C6C00BD15E0 /* Repository.swift */; };
 		8C5510A51F1709F800BD15E0 /* targaryenSigil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C5510A41F1709F800BD15E0 /* targaryenSigil.jpg */; };
+		8C55F7121F2B9F640090D449 /* EpisodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C55F7111F2B9F640090D449 /* EpisodeTests.swift */; };
 		8C65F6DF1F2A553200913BD2 /* houses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C65F6DE1F2A553200913BD2 /* houses.jpg */; };
 		8C65F6E11F2A553C00913BD2 /* westeros.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C65F6E01F2A553C00913BD2 /* westeros.png */; };
 		8C65F6EA1F2A67F300913BD2 /* PersonWikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C65F6E81F2A67F300913BD2 /* PersonWikiViewController.swift */; };
@@ -151,6 +152,7 @@
 		8C5510A01F167AB400BD15E0 /* RepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		8C5510A21F167C6C00BD15E0 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		8C5510A41F1709F800BD15E0 /* targaryenSigil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenSigil.jpg; sourceTree = "<group>"; };
+		8C55F7111F2B9F640090D449 /* EpisodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeTests.swift; sourceTree = "<group>"; };
 		8C65F6DE1F2A553200913BD2 /* houses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = houses.jpg; sourceTree = "<group>"; };
 		8C65F6E01F2A553C00913BD2 /* westeros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = westeros.png; sourceTree = "<group>"; };
 		8C65F6E81F2A67F300913BD2 /* PersonWikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonWikiViewController.swift; sourceTree = "<group>"; };
@@ -319,9 +321,10 @@
 				8C29B99A1F0D49990022DCBE /* Info.plist */,
 				8CD583021F0FC31000D425E0 /* HouseTests.swift */,
 				8CD5830C1F0FCCB700D425E0 /* PersonTest.swift */,
+				8CD62E091F29770200E9AF2A /* SeasonTests.swift */,
+				8C55F7111F2B9F640090D449 /* EpisodeTests.swift */,
 				8C5510A01F167AB400BD15E0 /* RepositoryTests.swift */,
 				8CDE53BA1F1FC3F400D96B34 /* ArrayDataSourceTests.swift */,
-				8CD62E091F29770200E9AF2A /* SeasonTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -716,6 +719,7 @@
 				8CD5830D1F0FCCB700D425E0 /* PersonTest.swift in Sources */,
 				8CDE53BB1F1FC3F400D96B34 /* ArrayDataSourceTests.swift in Sources */,
 				8C5510A11F167AB400BD15E0 /* RepositoryTests.swift in Sources */,
+				8C55F7121F2B9F640090D449 /* EpisodeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

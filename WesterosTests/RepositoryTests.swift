@@ -43,7 +43,8 @@ class RepositoryTests: XCTestCase {
         XCTAssertEqual(houses[0].name, firstHouse)
     }
     
-    func testLocalRepositoryFilter() {
+    func testLocalRepositoryFilterHouses() {
+        
         func filterStark(house: House) -> Bool {
             let starkHouse : House? = Repository.local.house(named: "Stark")
             return house == starkHouse
@@ -65,6 +66,29 @@ class RepositoryTests: XCTestCase {
         
         let filtered = Repository.local.houses(filteredBy: { $0.count == 2 })
         XCTAssertEqual(filtered?.count, 1)
+    }
+    
+    
+    func testLocalRepositoryFilterSeasons() {
+        
+        func filterSeason1(season: Season) -> Bool {
+            let season1 : Season? = Repository.local.seasons.first
+            return season == season1
+        }
+        
+        func filterFail(season: Season) -> Bool {
+            let seasonFail = Season(name: "Season FAIL",
+                                    date: "01/01/2005",
+                                    image: UIImage(named: "noimage.jpg")!)
+            return season == seasonFail
+        }
+        
+        var result : [Season]? = Repository.local.seasons(filterdBy: filterSeason1)
+        XCTAssertNotEqual(result!, [])
+        
+        result = Repository.local.seasons(filterdBy: filterFail)
+        XCTAssertEqual(result!, [])
+    
     }
 }
 

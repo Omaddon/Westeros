@@ -27,9 +27,19 @@ class PersonTest: XCTestCase {
         starkHouse = Repository.local.house(named: "Stark")
         lannisterHouse = Repository.local.house(named: "Lannister")
         
-        robb = Person(name: "Robb", alias: "The young wolf", house: starkHouse)
-        arya = Person(name: "Arya", house: starkHouse)
-        tyrion = Person(name: "Tyrion", alias: "The Imp", house: lannisterHouse)
+        robb = Person(name: "Robb",
+                      alias: "The young wolf",
+                      house: starkHouse,
+                      url: URL(string: "https://awoiaf.westeros.org/index.php/Robb_Stark"),
+                      image: UIImage(named: "noimage.jpg")!)
+        arya = Person(name: "Arya",
+                      house: starkHouse,
+                      image: UIImage(named: "noimage.jpg")!)
+        tyrion = Person(name: "Tyrion",
+                        alias: "The Imp",
+                        house: lannisterHouse,
+                        url: URL(string: "https://awoiaf.westeros.org/index.php/Tyrion_Lannister"),
+                        image: UIImage(named: "noimage.jpg")!)
         
 //        robb = Repository.local.char(named: "Robb", house: "Stark")
 //        arya = Repository.local.char(named: "Arya", house: "Stark")
@@ -54,7 +64,11 @@ class PersonTest: XCTestCase {
         XCTAssertEqual(tyrion, tyrion)
         
         // Igualdad
-        let imp = Person(name: "Tyrion", alias: "The Imp", house: lannisterHouse)
+        let imp = Person(name: "Tyrion",
+                         alias: "The Imp",
+                         house: lannisterHouse,
+                         url: URL(string: "https://awoiaf.westeros.org/index.php/Tyrion_Lannister"),
+                         image: UIImage(named: "noimage.jpg")!)
         XCTAssertEqual(imp, tyrion)
         
         // Desigualdad
