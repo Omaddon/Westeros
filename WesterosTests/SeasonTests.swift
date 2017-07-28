@@ -12,10 +12,11 @@ import XCTest
 class SeasonTests: XCTestCase {
     
     
-    var season1     : Season!
-    var season2     : Season!
-    var charTest    : Person!
-    var episodeTest : Episode!
+    var season1         : Season!
+    var season2         : Season!
+    var charTest        : Person!
+    var episode1Test    : Episode!
+    var episode2test    : Episode!
     
     
     override func setUp() {
@@ -24,12 +25,19 @@ class SeasonTests: XCTestCase {
         season1 = Repository.local.seasons.first
         season2 = Repository.local.seasons[1]
         charTest = Repository.local.houses.first?.sortedMembers().first
-        episodeTest = Episode(title: "EpisodioTest",
+        episode1Test = Episode(title: "EpisodioTest",
                               emitOn: "01/01/2017",
                               number: 1,
                               chars: [charTest],
                               season: season1,
                               image: UIImage(named: "noimage.jpg")!)
+        episode2test = Episode(title: "EpisodioTest",
+                               emitOn: "01/01/2017",
+                               number: 1,
+                               chars: [charTest],
+                               season: season1,
+                               image: UIImage(named: "noimage.jpg")!)
+        
         
     }
     
@@ -47,8 +55,15 @@ class SeasonTests: XCTestCase {
     func testAddEpisode() {
         XCTAssertEqual(season1.count, 10)
         
-        season1.add(episode: episodeTest)
+        season1.add(episode: episode1Test)
         XCTAssertEqual(season1.count, 11)
+    }
+    
+    func testAddEpisodes() {
+        XCTAssertEqual(season1.count, 10)
+        
+        season1.add(episodes: episode1Test, episode2test)
+        XCTAssertEqual(season1.count, 12)
     }
     
     func testSortedSeasons() {
@@ -91,6 +106,13 @@ class SeasonTests: XCTestCase {
     
     func testCustomStringConvertible() {
         XCTAssertEqual(season1.description, "Season 1")
+    }
+    
+    
+    func testImagesHouses() {
+        for season in Repository.local.seasons {
+            XCTAssertNotNil(season.image)
+        }
     }
     
 }

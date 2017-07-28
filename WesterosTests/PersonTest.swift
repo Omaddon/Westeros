@@ -57,6 +57,7 @@ class PersonTest: XCTestCase {
     
     func testFullName() {
         XCTAssertEqual(tyrion.fullName, "Tyrion Lannister")
+        XCTAssertNotEqual(tyrion.fullName, "Eres un enano!!")
     }
     
     func testPersonEquality() {
@@ -73,6 +74,21 @@ class PersonTest: XCTestCase {
         
         // Desigualdad
         XCTAssertNotEqual(tyrion, arya)
+    }
+    
+    func testWikiPersonURL() {
+        
+        let urls : [URL] = (Repository.local.seasons.first?.sortedMembers().first?.sortedMembers().map{ $0.wikiURL! })!
+        
+        for url in urls {
+            XCTAssertNotNil(url)
+        }
+    }
+    
+    func testImagesPersons() {
+        for person in (Repository.local.seasons.first?.sortedMembers().first?.sortedMembers())! {
+            XCTAssertNotNil(person.image)
+        }
     }
     
 }

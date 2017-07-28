@@ -85,6 +85,16 @@ class EpisodeTests: XCTestCase {
         XCTAssertEqual(episode1.description, "Winter is coming")
     }
     
+    
+    func testImagesHouses() {
+        
+        for season in Repository.local.seasons {
+            for episode in season.sortedMembers() {
+                XCTAssertNotNil(episode.image)
+            }
+        }
+    }
+    
 }
 
 

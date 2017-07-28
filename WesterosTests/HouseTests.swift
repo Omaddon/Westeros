@@ -18,6 +18,8 @@ class HouseTests: XCTestCase {
     var lannisterHouse  : House!
     
     var lyanna          : Person!
+    var bran            : Person!
+    var catelyn         : Person!
     var martyn          : Person!
     
     override func setUp() {
@@ -29,8 +31,10 @@ class HouseTests: XCTestCase {
         starkSigil = starkHouse.sigil
         lannisterSigil = lannisterHouse.sigil
         
-        lyanna = Person(name: "Lyanna", house: starkHouse, image: UIImage(named: "noimage.jpg")!)
-        martyn = Person(name: "Martyn", house: lannisterHouse, image: UIImage(named: "noimage.jpg")!)
+        lyanna  = Person(name: "Lyanna", house: starkHouse, image: UIImage(named: "noimage.jpg")!)
+        bran    = Person(name: "Bran", house: starkHouse, image: UIImage(named: "noimage.jpg")!)
+        catelyn = Person(name: "Catelyn", house: starkHouse, image: UIImage(named: "noimage.jpg")!)
+        martyn  = Person(name: "Martyn", house: lannisterHouse, image: UIImage(named: "noimage.jpg")!)
         
     }
     
@@ -50,7 +54,7 @@ class HouseTests: XCTestCase {
     }
     
     
-    func testAddPersons() {
+    func testAddPerson() {
         XCTAssertEqual(starkHouse.count, 4)
         starkHouse.add(person: lyanna)
         XCTAssertEqual(starkHouse.count, 5)
@@ -59,6 +63,15 @@ class HouseTests: XCTestCase {
         lannisterHouse.add(person: martyn)
         XCTAssertEqual(lannisterHouse.count, 5)
     }
+
+    
+    func testAddPersons() {
+        XCTAssertEqual(starkHouse.count, 4)
+        starkHouse.add(persons: lyanna, bran, catelyn)
+        XCTAssertEqual(starkHouse.count, 7)
+        
+    }
+    
     
     func testHouseEquality() {
         // Identidad
@@ -110,6 +123,20 @@ class HouseTests: XCTestCase {
         XCTAssertNotEqual(starkHouse, Repository.local.house(named: "Lannister"))
         XCTAssertEqual(Repository.local.house(named: "Stark"), Repository.local.house(named: "Stark"))
         XCTAssertNil(Repository.local.house(named: "CasaFalsa"))
+    }
+    
+    func testWikiUrls() {
+        
+        let urls : [URL] = Repository.local.houses.map{ $0.wikiURL }
+        for url in urls {
+            XCTAssertNotNil(url)
+        }
+    }
+    
+    func testImagesHouses() {
+        for house in Repository.local.houses {
+            XCTAssertNotNil(house.sigil.image)
+        }
     }
 }
 
