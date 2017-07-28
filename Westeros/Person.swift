@@ -6,7 +6,7 @@
 //  Copyright © 2017 Ammyt. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 
 // private:         dentro de la clase o la extension (se suele poner _ delante)
@@ -20,6 +20,7 @@ final class Person {
     let name    : String
     let house   : House
     let wikiURL : URL?
+    let image   : UIImage
     private let _alias   : String?
     
     // Variable computada
@@ -41,18 +42,18 @@ final class Person {
         }
     }
     
-    init(name: String, alias: String?, house: House, url: URL?) {
+    init(name: String, alias: String?, house: House, url: URL?, image: UIImage) {
         
-        (self.name, _alias, self.house, self.wikiURL) = (name, alias, house, url)
+        (self.name, _alias, self.house, self.wikiURL, self.image) = (name, alias, house, url, image)
     }
     
     
-    convenience init(name: String, house: House) {
-        self.init(name: name, alias: nil, house: house, url: nil)
+    convenience init(name: String, house: House, image: UIImage) {
+        self.init(name: name, alias: nil, house: house, url: nil, image: image)
     }
     
-    convenience init(name: String, house: House, url: URL?) {
-        self.init(name: name, alias: nil, house: house, url: url)
+    convenience init(name: String, house: House, url: URL?, image: UIImage) {
+        self.init(name: name, alias: nil, house: house, url: url, image: image)
     }
     
 //    init(name: String, house: House) {

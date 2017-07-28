@@ -40,6 +40,7 @@ final class DataSources {
             }
             
             cell?.textLabel?.text = person.fullName
+            cell?.imageView?.image = person.image
             cell?.accessoryType = .disclosureIndicator
             
             return cell!
@@ -58,6 +59,7 @@ final class DataSources {
             
             cell?.textLabel?.text = season.description
             cell?.detailTextLabel?.text = "Release: \(season.formatter.string(from: season.date))"
+            cell?.imageView?.image = season.image
             cell?.accessoryType = .disclosureIndicator
             
             return cell!
@@ -75,8 +77,9 @@ final class DataSources {
                 cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
             }
             
-            cell?.textLabel?.text = "Episodio \(episode.number): \(episode.description)"
+            cell?.textLabel?.text = "Ep. \(episode.number): \(episode.description)"
             cell?.detailTextLabel?.text = episode.formatter.string(from: episode.emitOn)
+            cell?.imageView?.image = episode.image
             cell?.accessoryType = .disclosureIndicator
             
             return cell!

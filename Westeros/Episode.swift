@@ -16,12 +16,13 @@ final class Episode {
     let title           : String
     let emitOn          : Date
     let number          : Int
+    let image           : UIImage
     weak var season     : Season?
     
     private var _chars   : [Person]
     
-    init(title: String, emitOn: String, number: Int, chars: [Person], season: Season) {
-        (self.title, self.season) = (title, season)
+    init(title: String, emitOn: String, number: Int, chars: [Person], season: Season, image: UIImage) {
+        (self.title, self.season, self.image) = (title, season, image)
 
         _chars = chars
         
