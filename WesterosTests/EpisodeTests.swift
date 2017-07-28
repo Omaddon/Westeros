@@ -43,10 +43,10 @@ class EpisodeTests: XCTestCase {
     
     
     func testAddChar() {
-        XCTAssertEqual(episode1.count, 10)
+        XCTAssertEqual(episode1.count, 17)
         
         episode1.add(char: char)
-        XCTAssertEqual(episode1.count, 11)
+        XCTAssertEqual(episode1.count, 18)
     }
     
     func testSortedEpisodes() {

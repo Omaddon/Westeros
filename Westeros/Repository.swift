@@ -597,14 +597,23 @@ final class LocalFactory : HouseFactory {
     var houses : [House] {
         get {
             // Creamos nuestras casas
-            let starkSigil = Sigil(image: #imageLiteral(resourceName: "codeIsComing.png"), description: "Direwolf")
-            let lannisterSigil = Sigil(image: #imageLiteral(resourceName: "lannister.jpg"), description: "Rampant Lion")
-            let targaryenSigil = Sigil(image: #imageLiteral(resourceName: "targaryenSigil.jpg"), description: "Red three-headed dragon")
+            // SIGILS
+            let starkSigil = Sigil(image: #imageLiteral(resourceName: "starkSigil.png"), description: "Direwolf")
+            let lannisterSigil = Sigil(image: #imageLiteral(resourceName: "lannisterSigil.png"), description: "Rampant Lion")
+            let targaryenSigil = Sigil(image: #imageLiteral(resourceName: "targaryenSigil.png"), description: "Red three-headed dragon")
+            let baratheonSigil = Sigil(image: #imageLiteral(resourceName: "baratheonSigil.png"), description: "A crowned stag black")
+            let greyjoySigil = Sigil(image: #imageLiteral(resourceName: "greyjoySigil.png"), description: "Sable, a kraken Or")
+            let tyrellSigil = Sigil(image: #imageLiteral(resourceName: "tyrellSigil.png"), description: "A golden rose, on a green field")
             
+            // URLS
             let starkURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Stark")!
             let lannisterURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Lannister")!
             let targaryenURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Targaryen")!
+            let baratheonURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Baratheon")!
+            let greyjoyURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Greyjoy")!
+            let tyrellURL = URL(string: "https://awoiaf.westeros.org/index.php/House_Tyrell")!
             
+            // HOUSES
             let stark = House(name: "Stark",
                               sigil: starkSigil,
                               words: "Winter is coming!",
@@ -617,7 +626,20 @@ final class LocalFactory : HouseFactory {
                                   sigil: targaryenSigil,
                                   words: "Fire and blood!",
                                   url: targaryenURL)
+            let baratheon = House(name: "Baratheon",
+                                  sigil: baratheonSigil,
+                                  words: "Ours is the Fury",
+                                  url: baratheonURL)
+            let greyjoy = House(name: "Greyjoy",
+                                sigil: greyjoySigil,
+                                words: "We Do Not Sow",
+                                url: greyjoyURL)
+            let tyrell = House(name: "Tyrell",
+                               sigil: tyrellSigil,
+                               words: "Growing Strong",
+                               url: tyrellURL)
             
+            // PERSONS
             let robb = Person(name: "Robb",
                               alias: "The young wolf",
                               house: stark,
@@ -636,6 +658,8 @@ final class LocalFactory : HouseFactory {
                                house: stark,
                                url: URL(string: "https://awoiaf.westeros.org/index.php/Sansa_Stark"),
                                image: UIImage(named: "sansaStark.png")!)
+            
+            //--------------
             
             let tywin = Person(name: "Tywin",
                                alias: "The Lion of Lannister",
@@ -657,6 +681,8 @@ final class LocalFactory : HouseFactory {
                                 url: URL(string: "https://awoiaf.westeros.org/index.php/Cersei_Lannister"),
                                 image: UIImage(named: "cerseiLannister.png")!)
             
+            //--------------
+            
             let daenerys = Person(name: "Daenerys",
                                   alias: "Khaleesi",
                                   house: targaryen,
@@ -668,22 +694,60 @@ final class LocalFactory : HouseFactory {
                                  url: URL(string: "https://awoiaf.westeros.org/index.php/Viserys_Targaryen"),
                                  image: UIImage(named: "viserysTargaryen.png")!)
             
-            // Añadimos los personajes a las casas
-//            stark.add(person: robb)
-//            stark.add(person: arya)
-//            stark.add(person: eddard)
-//            stark.add(person: sansa)
-            stark.add(persons: robb, arya, eddard, sansa)
-//            lannister.add(person: tywin)
-//            lannister.add(person: jaime)
-//            lannister.add(person: tyrion)
-//            lannister.add(person: cersei)
-            lannister.add(persons: tywin, jaime, tyrion, cersei)
-//            targaryen.add(person: daenerys)
-//            targaryen.add(person: viserys)
-            targaryen.add(persons: daenerys, viserys)
+            //--------------
             
-            return [stark, lannister, targaryen].sorted()
+            let robert = Person(name: "Robert",
+                                alias: "The usurper",
+                                house: baratheon,
+                                url: URL(string: "https://awoiaf.westeros.org/index.php/Robert_I_Baratheon"),
+                                image: UIImage(named: "robert.jpg")!)
+            let stannis = Person(name: "Stannis",
+                                 alias: "The King in the Narrow Sea",
+                                 house: baratheon,
+                                 url: URL(string: "https://awoiaf.westeros.org/index.php/Stannis_Baratheon"),
+                                 image: UIImage(named: "stannis.jpg")!)
+            
+            //--------------
+            
+            let theon = Person(name: "Theon",
+                               alias: "Reek",
+                               house: greyjoy,
+                               url: URL(string: "https://awoiaf.westeros.org/index.php/Theon_Greyjoy"),
+                               image: UIImage(named: "theon.png")!)
+            let asha = Person(name: "Asha",
+                              alias: "Esgred",
+                              house: greyjoy,
+                              url: URL(string: "https://awoiaf.westeros.org/index.php/Asha_Greyjoy"),
+                              image: UIImage(named: "asha.png")!)
+            let euron = Person(name: "Euron",
+                               alias: "Crow's Eye",
+                               house: greyjoy,
+                               url: URL(string: "https://awoiaf.westeros.org/index.php/Euron_Greyjoy"),
+                               image: UIImage(named: "euron.png")!)
+            
+            //--------------
+            
+            let olenna = Person(name: "Olenna",
+                                alias: "Queen of Thorns",
+                                house: tyrell,
+                                url: URL(string: "https://awoiaf.westeros.org/index.php/Olenna_Tyrell"),
+                                image: UIImage(named: "olenna.png")!)
+            let margaery = Person(name: "Margaery",
+                                  alias: "Little Rose",
+                                  house: tyrell,
+                                  url: URL(string: "https://awoiaf.westeros.org/index.php/Margaery_Tyrell"),
+                                  image: UIImage(named: "margaery.jpg")!)
+            
+            
+            // Añadimos los personajes a las casas
+            stark.add(persons: robb, arya, eddard, sansa)
+            lannister.add(persons: tywin, jaime, tyrion, cersei)
+            targaryen.add(persons: daenerys, viserys)
+            baratheon.add(persons: robert, stannis)
+            greyjoy.add(persons: theon, asha, euron)
+            tyrell.add(persons: olenna, margaery)
+            
+            return [stark, lannister, targaryen, baratheon, greyjoy, tyrell].sorted()
         }
     }
 

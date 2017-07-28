@@ -29,12 +29,12 @@ class RepositoryTests: XCTestCase {
         let houses = Repository.local.houses
         
         XCTAssertNotNil(houses)
-        XCTAssertEqual(houses.count, 3)
+        XCTAssertEqual(houses.count, 6)
     }
     
     func testLocalRepositorySorted() {
         let houses = Repository.local.houses
-        let firstHouse = "Lannister"
+        let firstHouse = "Baratheon"
         
         XCTAssertNotEqual(houses, houses.reversed())
         
@@ -65,7 +65,7 @@ class RepositoryTests: XCTestCase {
         XCTAssertEqual(result!, [])
         
         let filtered = Repository.local.houses(filteredBy: { $0.count == 2 })
-        XCTAssertEqual(filtered?.count, 1)
+        XCTAssertEqual(filtered?.count, 3)
     }
     
     

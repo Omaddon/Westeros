@@ -15,8 +15,20 @@
 		8C55109F1F16771100BD15E0 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C55109E1F16771100BD15E0 /* UIKitExtensions.swift */; };
 		8C5510A11F167AB400BD15E0 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5510A01F167AB400BD15E0 /* RepositoryTests.swift */; };
 		8C5510A31F167C6C00BD15E0 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5510A21F167C6C00BD15E0 /* Repository.swift */; };
-		8C5510A51F1709F800BD15E0 /* targaryenSigil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C5510A41F1709F800BD15E0 /* targaryenSigil.jpg */; };
 		8C55F7121F2B9F640090D449 /* EpisodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C55F7111F2B9F640090D449 /* EpisodeTests.swift */; };
+		8C55F7141F2BB3F30090D449 /* baratheonSigil.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F7131F2BB3F30090D449 /* baratheonSigil.png */; };
+		8C55F7161F2BB76E0090D449 /* stannis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F7151F2BB76E0090D449 /* stannis.jpg */; };
+		8C55F7181F2BB7750090D449 /* robert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F7171F2BB7750090D449 /* robert.jpg */; };
+		8C55F71A1F2BB8C60090D449 /* greyjoySigil.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F7191F2BB8C60090D449 /* greyjoySigil.png */; };
+		8C55F71C1F2BBAD90090D449 /* theon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F71B1F2BBAD90090D449 /* theon.png */; };
+		8C55F71E1F2BBB550090D449 /* asha.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F71D1F2BBB550090D449 /* asha.png */; };
+		8C55F7201F2BBC4F0090D449 /* euron.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F71F1F2BBC4F0090D449 /* euron.png */; };
+		8C55F7221F2BBCEB0090D449 /* tyrellSigil.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F7211F2BBCEB0090D449 /* tyrellSigil.png */; };
+		8C55F7241F2BBE4A0090D449 /* olenna.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F7231F2BBE4A0090D449 /* olenna.png */; };
+		8C55F7261F2BBEDB0090D449 /* margaery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F7251F2BBEDB0090D449 /* margaery.jpg */; };
+		8C55F7281F2BC0230090D449 /* starkSigil.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F7271F2BC0230090D449 /* starkSigil.png */; };
+		8C55F72A1F2BC0750090D449 /* lannisterSigil.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F7291F2BC0750090D449 /* lannisterSigil.png */; };
+		8C55F72C1F2BC0C70090D449 /* targaryenSigil.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C55F72B1F2BC0C70090D449 /* targaryenSigil.png */; };
 		8C65F6DF1F2A553200913BD2 /* houses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C65F6DE1F2A553200913BD2 /* houses.jpg */; };
 		8C65F6E11F2A553C00913BD2 /* westeros.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C65F6E01F2A553C00913BD2 /* westeros.png */; };
 		8C65F6EA1F2A67F300913BD2 /* PersonWikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C65F6E81F2A67F300913BD2 /* PersonWikiViewController.swift */; };
@@ -107,8 +119,6 @@
 		8C65F7A11F2AE80E00913BD2 /* throneIron.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C65F7A01F2AE80E00913BD2 /* throneIron.png */; };
 		8CD583031F0FC31000D425E0 /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD583021F0FC31000D425E0 /* HouseTests.swift */; };
 		8CD583051F0FC44500D425E0 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD583041F0FC44500D425E0 /* House.swift */; };
-		8CD583091F0FCA8500D425E0 /* codeIsComing.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD583071F0FCA8500D425E0 /* codeIsComing.png */; };
-		8CD5830A1F0FCA8500D425E0 /* lannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CD583081F0FCA8500D425E0 /* lannister.jpg */; };
 		8CD5830D1F0FCCB700D425E0 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5830C1F0FCCB700D425E0 /* PersonTest.swift */; };
 		8CD5830F1F0FCF6E00D425E0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5830E1F0FCF6E00D425E0 /* Person.swift */; };
 		8CD62E081F2976B200E9AF2A /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD62E071F2976B200E9AF2A /* Season.swift */; };
@@ -151,8 +161,20 @@
 		8C55109E1F16771100BD15E0 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
 		8C5510A01F167AB400BD15E0 /* RepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		8C5510A21F167C6C00BD15E0 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		8C5510A41F1709F800BD15E0 /* targaryenSigil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenSigil.jpg; sourceTree = "<group>"; };
 		8C55F7111F2B9F640090D449 /* EpisodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeTests.swift; sourceTree = "<group>"; };
+		8C55F7131F2BB3F30090D449 /* baratheonSigil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baratheonSigil.png; sourceTree = "<group>"; };
+		8C55F7151F2BB76E0090D449 /* stannis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stannis.jpg; sourceTree = "<group>"; };
+		8C55F7171F2BB7750090D449 /* robert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robert.jpg; sourceTree = "<group>"; };
+		8C55F7191F2BB8C60090D449 /* greyjoySigil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greyjoySigil.png; sourceTree = "<group>"; };
+		8C55F71B1F2BBAD90090D449 /* theon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theon.png; sourceTree = "<group>"; };
+		8C55F71D1F2BBB550090D449 /* asha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asha.png; sourceTree = "<group>"; };
+		8C55F71F1F2BBC4F0090D449 /* euron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = euron.png; sourceTree = "<group>"; };
+		8C55F7211F2BBCEB0090D449 /* tyrellSigil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tyrellSigil.png; sourceTree = "<group>"; };
+		8C55F7231F2BBE4A0090D449 /* olenna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = olenna.png; sourceTree = "<group>"; };
+		8C55F7251F2BBEDB0090D449 /* margaery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = margaery.jpg; sourceTree = "<group>"; };
+		8C55F7271F2BC0230090D449 /* starkSigil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starkSigil.png; sourceTree = "<group>"; };
+		8C55F7291F2BC0750090D449 /* lannisterSigil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lannisterSigil.png; sourceTree = "<group>"; };
+		8C55F72B1F2BC0C70090D449 /* targaryenSigil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = targaryenSigil.png; sourceTree = "<group>"; };
 		8C65F6DE1F2A553200913BD2 /* houses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = houses.jpg; sourceTree = "<group>"; };
 		8C65F6E01F2A553C00913BD2 /* westeros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = westeros.png; sourceTree = "<group>"; };
 		8C65F6E81F2A67F300913BD2 /* PersonWikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonWikiViewController.swift; sourceTree = "<group>"; };
@@ -243,8 +265,6 @@
 		8C65F7A01F2AE80E00913BD2 /* throneIron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = throneIron.png; sourceTree = "<group>"; };
 		8CD583021F0FC31000D425E0 /* HouseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
 		8CD583041F0FC44500D425E0 /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
-		8CD583071F0FCA8500D425E0 /* codeIsComing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeIsComing.png; sourceTree = "<group>"; };
-		8CD583081F0FCA8500D425E0 /* lannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lannister.jpg; sourceTree = "<group>"; };
 		8CD5830C1F0FCCB700D425E0 /* PersonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
 		8CD5830E1F0FCF6E00D425E0 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		8CD62E071F2976B200E9AF2A /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
@@ -374,11 +394,19 @@
 				8C65F7A01F2AE80E00913BD2 /* throneIron.png */,
 				8C65F6DE1F2A553200913BD2 /* houses.jpg */,
 				8C65F6E01F2A553C00913BD2 /* westeros.png */,
-				8C5510A41F1709F800BD15E0 /* targaryenSigil.jpg */,
-				8CD583071F0FCA8500D425E0 /* codeIsComing.png */,
-				8CD583081F0FCA8500D425E0 /* lannister.jpg */,
+				8C55F72B1F2BC0C70090D449 /* targaryenSigil.png */,
+				8C55F7131F2BB3F30090D449 /* baratheonSigil.png */,
+				8C55F7191F2BB8C60090D449 /* greyjoySigil.png */,
+				8C55F7211F2BBCEB0090D449 /* tyrellSigil.png */,
+				8C55F7291F2BC0750090D449 /* lannisterSigil.png */,
+				8C55F7271F2BC0230090D449 /* starkSigil.png */,
 				8C65F6EC1F2ACC4000913BD2 /* aryaStark.png */,
 				8C65F6ED1F2ACC4000913BD2 /* cerseiLannister.png */,
+				8C55F7231F2BBE4A0090D449 /* olenna.png */,
+				8C55F7251F2BBEDB0090D449 /* margaery.jpg */,
+				8C55F71B1F2BBAD90090D449 /* theon.png */,
+				8C55F71D1F2BBB550090D449 /* asha.png */,
+				8C55F71F1F2BBC4F0090D449 /* euron.png */,
 				8C65F6EE1F2ACC4000913BD2 /* daenerysTargaryen.png */,
 				8C65F6EF1F2ACC4000913BD2 /* eddardStark.png */,
 				8C65F6F01F2ACC4000913BD2 /* jaimeLannister.jpg */,
@@ -387,6 +415,8 @@
 				8C65F6F31F2ACC4000913BD2 /* tyrionLannister.jpg */,
 				8C65F6F41F2ACC4000913BD2 /* tywinLannister.jpg */,
 				8C65F6F51F2ACC4000913BD2 /* viserysTargaryen.png */,
+				8C55F7151F2BB76E0090D449 /* stannis.jpg */,
+				8C55F7171F2BB7750090D449 /* robert.jpg */,
 				8C65F7001F2ACFA600913BD2 /* 1x1.jpg */,
 				8C65F7021F2AD0C100913BD2 /* 1x2.jpg */,
 				8C65F7031F2AD0C100913BD2 /* 1x3.jpg */,
@@ -585,9 +615,9 @@
 				8C65F75E1F2AD55800913BD2 /* 3x10.jpg in Resources */,
 				8C65F74E1F2AD55800913BD2 /* 2x4.jpg in Resources */,
 				8C65F7541F2AD55800913BD2 /* 2x10.jpg in Resources */,
-				8C5510A51F1709F800BD15E0 /* targaryenSigil.jpg in Resources */,
 				8C65F7131F2AD0C100913BD2 /* 1x10.jpg in Resources */,
 				8C65F7641F2AD55800913BD2 /* 4x6.jpg in Resources */,
+				8C55F71C1F2BBAD90090D449 /* theon.png in Resources */,
 				8C65F75F1F2AD55800913BD2 /* 4x1.jpg in Resources */,
 				8C65F74C1F2AD55800913BD2 /* 2x2.jpg in Resources */,
 				8CF7997D1F1E5D3900AC30F8 /* WikiViewController.xib in Resources */,
@@ -595,20 +625,22 @@
 				8C65F6FB1F2ACC4000913BD2 /* robbStark.png in Resources */,
 				8C65F7011F2ACFA600913BD2 /* 1x1.jpg in Resources */,
 				8C65F75C1F2AD55800913BD2 /* 3x8.jpg in Resources */,
+				8C55F7181F2BB7750090D449 /* robert.jpg in Resources */,
 				8C65F76C1F2AD55800913BD2 /* 5x4.jpg in Resources */,
-				8CD5830A1F0FCA8500D425E0 /* lannister.jpg in Resources */,
+				8C55F7161F2BB76E0090D449 /* stannis.jpg in Resources */,
+				8C55F7201F2BBC4F0090D449 /* euron.png in Resources */,
 				8C65F70F1F2AD0C100913BD2 /* 1x6.jpg in Resources */,
 				8C65F7591F2AD55800913BD2 /* 3x5.jpg in Resources */,
 				8C65F6EB1F2A67F300913BD2 /* PersonWikiViewController.xib in Resources */,
 				8C65F7601F2AD55800913BD2 /* 4x2.jpg in Resources */,
 				8C65F6FC1F2ACC4000913BD2 /* sansaStark.png in Resources */,
 				8C65F76A1F2AD55800913BD2 /* 5x2.jpg in Resources */,
-				8CD583091F0FCA8500D425E0 /* codeIsComing.png in Resources */,
 				8C65F7111F2AD0C100913BD2 /* 1x8.jpg in Resources */,
 				8C65F77E1F2AD55800913BD2 /* 7x2.jpg in Resources */,
 				8C65F6F61F2ACC4000913BD2 /* aryaStark.png in Resources */,
 				8C65F78F1F2AD86500913BD2 /* season7.png in Resources */,
 				8C65F77C1F2AD55800913BD2 /* 6x10.jpg in Resources */,
+				8C55F7241F2BBE4A0090D449 /* olenna.png in Resources */,
 				8C65F77F1F2AD55800913BD2 /* 7x3.jpg in Resources */,
 				8C65F74F1F2AD55800913BD2 /* 2x5.jpg in Resources */,
 				8C65F74B1F2AD55800913BD2 /* 2x1.jpg in Resources */,
@@ -625,11 +657,13 @@
 				8C65F7631F2AD55800913BD2 /* 4x5.jpg in Resources */,
 				8C65F78A1F2AD86500913BD2 /* season2.png in Resources */,
 				8C65F7621F2AD55800913BD2 /* 4x4.jpg in Resources */,
+				8C55F7261F2BBEDB0090D449 /* margaery.jpg in Resources */,
 				8C65F7801F2AD55800913BD2 /* 7x4.jpg in Resources */,
 				8C65F79C1F2ADFAD00913BD2 /* map.jpg in Resources */,
 				8C65F6F71F2ACC4000913BD2 /* cerseiLannister.png in Resources */,
 				8C31B1951F152AC100B0AB24 /* HouseViewController.xib in Resources */,
 				8C65F6FE1F2ACC4000913BD2 /* tywinLannister.jpg in Resources */,
+				8C55F7141F2BB3F30090D449 /* baratheonSigil.png in Resources */,
 				8C65F7971F2ADA6A00913BD2 /* season5.png in Resources */,
 				8C65F7691F2AD55800913BD2 /* 5x1.jpg in Resources */,
 				8C65F77A1F2AD55800913BD2 /* 6x8.jpg in Resources */,
@@ -637,9 +671,11 @@
 				8C65F70D1F2AD0C100913BD2 /* 1x4.jpg in Resources */,
 				8C65F7681F2AD55800913BD2 /* 4x10.jpg in Resources */,
 				8C65F7A11F2AE80E00913BD2 /* throneIron.png in Resources */,
+				8C55F7221F2BBCEB0090D449 /* tyrellSigil.png in Resources */,
 				8C65F7941F2ADA6A00913BD2 /* season1.png in Resources */,
 				8C65F7701F2AD55800913BD2 /* 5x8.jpg in Resources */,
 				8C65F75B1F2AD55800913BD2 /* 3x7.jpg in Resources */,
+				8C55F7281F2BC0230090D449 /* starkSigil.png in Resources */,
 				8CF799851F1E7E8700AC30F8 /* PersonTableViewController.xib in Resources */,
 				8C65F7771F2AD55800913BD2 /* 6x5.jpg in Resources */,
 				8C65F76F1F2AD55800913BD2 /* 5x7.jpg in Resources */,
@@ -649,6 +685,8 @@
 				8C65F7661F2AD55800913BD2 /* 4x8.jpg in Resources */,
 				8C65F70E1F2AD0C100913BD2 /* 1x5.jpg in Resources */,
 				8C65F7811F2AD55800913BD2 /* noimage.jpg in Resources */,
+				8C55F72A1F2BC0750090D449 /* lannisterSigil.png in Resources */,
+				8C55F71A1F2BB8C60090D449 /* greyjoySigil.png in Resources */,
 				8C65F74D1F2AD55800913BD2 /* 2x3.jpg in Resources */,
 				8C65F7751F2AD55800913BD2 /* 6x3.jpg in Resources */,
 				8C65F6FF1F2ACC4000913BD2 /* viserysTargaryen.png in Resources */,
@@ -658,6 +696,7 @@
 				8C65F7561F2AD55800913BD2 /* 3x2.jpg in Resources */,
 				8C65F7741F2AD55800913BD2 /* 6x2.jpg in Resources */,
 				8C65F7571F2AD55800913BD2 /* 3x3.jpg in Resources */,
+				8C55F71E1F2BBB550090D449 /* asha.png in Resources */,
 				8C65F75A1F2AD55800913BD2 /* 3x6.jpg in Resources */,
 				8C65F76B1F2AD55800913BD2 /* 5x3.jpg in Resources */,
 				8C65F7121F2AD0C100913BD2 /* 1x9.jpg in Resources */,
@@ -668,6 +707,7 @@
 				8C65F6DF1F2A553200913BD2 /* houses.jpg in Resources */,
 				8C65F7651F2AD55800913BD2 /* 4x7.jpg in Resources */,
 				8C65F75D1F2AD55800913BD2 /* 3x9.jpg in Resources */,
+				8C55F72C1F2BC0C70090D449 /* targaryenSigil.png in Resources */,
 				8C65F6F81F2ACC4000913BD2 /* daenerysTargaryen.png in Resources */,
 				8C29B98B1F0D49980022DCBE /* Assets.xcassets in Resources */,
 				8C65F6FA1F2ACC4000913BD2 /* jaimeLannister.jpg in Resources */,
